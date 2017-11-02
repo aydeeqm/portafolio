@@ -36,7 +36,8 @@
 ========================================================== */
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url('./img/bg1.jpg') no-repeat center center fixed;
+  /* background: url('./img/bg1.jpg') no-repeat center center fixed; */
+  background: #ffffff;
   background-size: cover;
 }
 /* ==========================================================
@@ -454,13 +455,11 @@ iframe {
 }
 .main-menu-list a {
   display: block;
-  background: #08aeac;
+  background: rgb(193, 19, 0);
   padding: 10px;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 12px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
@@ -478,10 +477,8 @@ iframe {
   left: 0;
   height: 100%;
   width: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #021533;
+  background: #000000;
   z-index: -1;
 }
 .main-menu-list a:hover {

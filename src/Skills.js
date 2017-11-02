@@ -16,11 +16,11 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
             <ul className="skills-list">
                 <li>
                     <div className="progress">
-                        <div className="progress-bar" data-percent="80%" role="progressbar" style={{width: "90%"}}>
-                            <span className="sr-only">90% Complete</span>
+                        <div className="progress-bar" data-percent="80%" role="progressbar" style={{width: "80%"}}>
+                            <span className="sr-only">80% Complete</span>
                         </div>
                         <span className="progress-type">HTML5 / CSS3</span>
-                        <span className="progress-completed">90%</span>
+                        <span className="progress-completed">80%</span>
                     </div>
                 </li>
                 <li>
@@ -29,7 +29,7 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                             <span className="sr-only">60% Complete</span>
                         </div>
                         <span className="progress-type">Javascript</span>
-                        <span className="progress-completed">60%</span>
+                        <span className="progress-completed">70%</span>
                     </div>
                 </li>
                 <li>
@@ -37,64 +37,38 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                             <div className="progress-bar progress-bar-3" data-percent="40%" role="progressbar" style={{ width: "40%" }}>
                             <span className="sr-only">40% Complete</span>
                         </div>
-                        <span className="progress-type">PHP</span>
+                        <span className="progress-type">Jquery</span>
                         <span className="progress-completed">40%</span>
                     </div>
                 </li>
-            </ul>
-                <div>
-                    <div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{html}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
+                <li>
+                    <div className="progress">
+                        <div className="progress-bar progress-bar-3" data-percent="70%" role="progressbar" style={{ width: "70%" }}>
+                            <span className="sr-only">70% Complete</span>
                         </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{jquery}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{javascript}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{git}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{css}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{bootstrap}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
-                        <div className="skillbar clearfix " data-percent="90%">
-                            <div className="skillbar-title" >
-                                <span>{react}</span>
-                            </div>
-                            <div className="skillbar-bar" ></div>
-                            <div className="skill-bar-percent">90%</div>
-                        </div>
+                        <span className="progress-type">Bootstrap</span>
+                        <span className="progress-completed">70%</span>
                     </div>
-                </div>
+                </li>
+                <li>
+                    <div className="progress">
+                        <div className="progress-bar progress-bar-3" data-percent="70%" role="progressbar" style={{ width: "70%" }}>
+                            <span className="sr-only">70% Complete</span>
+                        </div>
+                        <span className="progress-type">Git</span>
+                        <span className="progress-completed">70%</span>
+                    </div>
+                </li>
+                <li>
+                    <div className="progress">
+                        <div className="progress-bar progress-bar-3" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
+                            <span className="sr-only">60% Complete</span>
+                        </div>
+                        <span className="progress-type">React / Redux</span>
+                        <span className="progress-completed">60%</span>
+                    </div>
+                </li>
+            </ul>
                 </div>
             </div>
     )

@@ -14,7 +14,7 @@ const Init_page = ({ name, education, bio }) => {
                   <img src={photo} id="profile1" className="profileActive" alt="" />
                 </div>
                 <div className="vcard-profile-description">
-                  <h1 className="profile-title">Hi, I'm <span className="color1">{name}</span></h1>
+                  <h1 className="profile-title">Hola soy <span className="color1">{name}</span></h1>
                       <h2 className="profile-subtitle">{education}</h2>
                   <hr className="hr1"></hr>
                       <div className="vcard-profile-description-text">
