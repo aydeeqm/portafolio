@@ -8,9 +8,7 @@ const App = ({mydata}) => {
   return(
     <div>
       <Header/>
-      <div>
-        <Home mydata={mydata}/>
-      </div>
+      <Home mydata={mydata}/>
     </div>
   )
 }

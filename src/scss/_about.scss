@@ -1,0 +1,61 @@
+.container.about .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%
+}
+
+.container.about .text-zone h1 {
+    font-size: 53px;
+    font-family: font-file-82132;
+    color: #08fdd8;
+    font-weight: normal;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px
+}
+
+.container.about h1 .blast {
+    opacity: 0;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.container.about .text-zone h1:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -10px
+}
+
+.container.about .text-zone h1:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    margin-left: 20px
+}
+
+.container.about .text-zone p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300
+}
+
+.container.about .text-zone .section-title {
+    margin-top: 0.5%;
+    color: #fff;
+}

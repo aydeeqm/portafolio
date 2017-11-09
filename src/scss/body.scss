@@ -1,5 +1,6 @@
 @import '_menu.scss';
 @import '_home.scss';
+@import '_about.scss';
 
 body {
     background: #252627;
@@ -11,3 +12,21 @@ body {
     user-select: none;
     overflow: auto;
 }
+
+  .container.contact .text-zone h1:before,
+  .container.skills .text-zone h1:before,
+  .container.about .text-zone h1:before {
+      margin-top: -38px
+  }
+
+  .container.contact .text-zone h1:after,
+  .container.skills .text-zone h1:after,
+  .container.about .text-zone h1:after {
+      bottom: -44px
+  }
+
+    .container.about .text-zone,
+    .container.skills .text-zone {
+        width: 80%;
+        min-height: 0
+    }

@@ -8,7 +8,7 @@ const Init_page = ({ name, education, bio }) => {
 
         <div className="section-vcardbody section-home ps-container section-vcardbody-pgactive" id="section-home">
             <div className="vcard-profile-pic">
-                <img src={photo} id="profile1" className="profileActive" alt="" />
+                {/* <img src={photo} id="profile1" className="profileActive" alt="" /> */}
             </div>
             <div className="vcard-profile-description">
                 <h1 className="profile-title">Hola soy <span className="color1">{name}</span></h1>
