@@ -1,16 +1,57 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import photo from './img/aydee.png';
-import profileo from './img/profile.jpg';
-import profileto from './img/profile2.jpg';
-import './App.css';
+import logo from './img/mark.png';
+import './css/body.css'; 
 
 const Init_page = ({ name, education, bio }) => {
     return (
+<div id="page" className="en">
+  <div className="container home-page" style={{opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)"}}>
+    <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+    <div className="text-zone">
+      <h1 aria-label=" Hi, I’m ack,web developer." className="blast-root"> 
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>H</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>i</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>,</span><br></br>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>I</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>’</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>m</span>
+        <img src={logo} alt="Front-end Developer Name, Web Developer Name" className="animation-logo"/>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>y</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>d</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>,</span><br></br>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>W</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>b</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>D</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>v</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>l</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>o</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>p</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>r</span>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>.</span>
+      </h1>
+      <h2>Front End Developer / Javascript / React / Redux</h2> 
+      <a rel="contact" href="#" className="flat-button">CONTACT ME</a>
+      </div>
+      <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt; </span>
+      <div id="bulb" className="bulb">
+        <a className="animated" href=""></a>
+      </div>
+      </div>
+      <div className="bg" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
+        <img className="jb" src={photo} alt="Front-end Developer Logo part" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }} />   
+      </div>
+</div>
             
-      <div className="section-vcardbody section-home" id="section-home">
+/*       <div className="section-vcardbody section-home" id="section-home">
                 <div className="vcard-profile-pic">
-                  <img src={profileo} id="profile2" alt="" />
                   <img src={photo} id="profile1" className="profileActive" alt="" />
                 </div>
                 <div className="vcard-profile-description">
@@ -35,7 +76,7 @@ const Init_page = ({ name, education, bio }) => {
                       <a href="#"><i className="fa fa-youtube"></i></a>
                   </div>
                 </div>
-      </div>
+      </div> */
     )
 }
 
@@ -51,17 +92,6 @@ const Home = ({ mydata }) => {
       })
       return (
       <section>
-{/*         <div class="loader-container" id="page-loader"> 
-        <div class="loading-wrapper">
-          <div class="loader-animation" id="loader-animation">
-            <span class="loader"><span class="loader-inner"></span></span>
-          </div>    
-          <div class="loader-name" id="loader-name">
-            Aydee <strong>Quispe</strong>
-          </div>
-          <p class="loader-job" id="loader-job">Web Designer & Web Developer</p>
-        </div>   
-      </div> */}
         {listComponent}
       </section>)
     }

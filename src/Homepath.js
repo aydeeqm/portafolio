@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import photo from './img/aydee.png';
-import profileo from './img/profile.jpg';
-import profileto from './img/profile2.jpg';
-import './App.css';
+/* import './App.css'; */
 
 const Init_page = ({ name, education, bio }) => {
     return (
 
         <div className="section-vcardbody section-home ps-container section-vcardbody-pgactive" id="section-home">
             <div className="vcard-profile-pic">
-                <img src={profileo} id="profile2" alt="" />
                 <img src={photo} id="profile1" className="profileActive" alt="" />
             </div>
             <div className="vcard-profile-description">
@@ -51,17 +48,6 @@ const Homepath = ({ mydata }) => {
     })
     return (
         <section>
-            {/*         <div class="loader-container" id="page-loader"> 
-        <div class="loading-wrapper">
-          <div class="loader-animation" id="loader-animation">
-            <span class="loader"><span class="loader-inner"></span></span>
-          </div>    
-          <div class="loader-name" id="loader-name">
-            Aydee <strong>Quispe</strong>
-          </div>
-          <p class="loader-job" id="loader-job">Web Designer & Web Developer</p>
-        </div>   
-      </div> */}
             {listComponent}
         </section>)
 }

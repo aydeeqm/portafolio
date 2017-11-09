@@ -7,8 +7,8 @@ import top from './img/top_5.png'
 import best from './img/best_squad.png';
 import rock from './img/ROCKING.png';
 import { connect } from 'redux-zero/react';
-import './App.css';
-
+/* import './App.css'; */
+/* import './css/body.css';  */
 const Second_page = ({photo}) => {
     return (
         <div className="section-vcardbody section-page ps-container ps-active-y section-page-active" id="page-resume" >

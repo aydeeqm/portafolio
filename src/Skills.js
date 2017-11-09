@@ -4,7 +4,7 @@ import Headerpath from './Headerpath';
 import Homepath from './Homepath';
 import {mydata} from './Data'
 import { connect } from 'redux-zero/react';
-import './App.css';
+/* import './App.css'; */
 
 const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react }) => {
     return (
