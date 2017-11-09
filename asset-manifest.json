@@ -1,11 +1,12 @@
 {
-  "main.css": "static/css/main.dcaaf8ac.css",
-  "main.css.map": "static/css/main.dcaaf8ac.css.map",
-  "main.js": "static/js/main.f52d0a55.js",
-  "main.js.map": "static/js/main.f52d0a55.js.map",
+  "main.css": "static/css/main.92522670.css",
+  "main.css.map": "static/css/main.92522670.css.map",
+  "main.js": "static/js/main.f7b3397a.js",
+  "main.js.map": "static/js/main.f7b3397a.js.map",
   "static\\media\\aydee.png": "static/media/aydee.b6ecb61c.png",
-  "static\\media\\bg-btn.png": "static/media/bg-btn.e2225f1f.png",
-  "static\\media\\bg-card2.png": "static/media/bg-card2.04d46ad5.png",
-  "static\\media\\projects.cur": "static/media/projects.b6f1502d.cur",
-  "static\\media\\projects2.cur": "static/media/projects2.51182385.cur"
+  "static\\media\\icomoon.eot?qx6tzk": "static/media/icomoon.fb4385af.eot",
+  "static\\media\\icomoon.svg?qx6tzk": "static/media/icomoon.2205fdf6.svg",
+  "static\\media\\icomoon.ttf?qx6tzk": "static/media/icomoon.114e4f81.ttf",
+  "static\\media\\icomoon.woff?qx6tzk": "static/media/icomoon.06ade6ef.woff",
+  "static\\media\\mark.png": "static/media/mark.07ff8ddf.png"
 }
