@@ -12,9 +12,9 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                 <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
                 <div class="text-zone">
                     <h1 aria-label=" Skills &amp; Experience" class="blast-root">
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>Skills </span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>&amp;</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}> Experience</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>Habilidades&nbsp;</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>&amp; </span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>&nbsp;Experiencia</span>
                     </h1>
                     <p aria-label="Main area of my expertise is front end development and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS (ES5,ES6), building small &amp; medium Web Apps, React , Vue.js, building custom plugins, features, animations and just coding layouts." class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>El área principal de mi experiencia es el desarrollo de front-end y todo lo relacionado con este lado de la web. HTML, CSS, JS (ES5, ES6), creación de aplicaciones Web pequeñas y medianas, Angular, Vue.js, creación de complementos personalizados, características, animaciones y diseños de codificación simple.</span>
