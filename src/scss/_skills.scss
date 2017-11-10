@@ -1,0 +1,141 @@
+/* ==========================================================
+! 12. SECTION: SKILLS
+========================================================== */
+.container.skills .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%
+}
+
+.container.skills .text-zone h1 {
+    font-size: 53px;
+    font-family: fantasy;
+    color: #08fdd8;
+    font-weight: normal;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    display: block
+}
+
+.container.skills h1 .blast {
+    opacity: 0;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.container.skills .text-zone h1:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -35px
+}
+
+.container.skills .text-zone h1:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    left: -20px;
+    bottom: -40px;
+    margin-left: 20px
+}
+
+.container.skills .text-zone p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300
+}
+
+.skills-charts {
+    position: absolute;
+    width: 80%;
+    right: -15%;
+    left: auto;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2
+}
+
+#myCanvasContainer {
+    position: relative;
+    width: 100%
+}
+
+#myCanvas {
+    position: absolute;
+    top: 400px;
+    left: 405px;
+    right: 0px;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 100%
+}
+
+
+
+
+
+.skills-list {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.progress>.progress-type {
+    position: absolute;
+    left: 0px;
+    font-size: 13px;
+    padding: 3px 30px 5px 10px;
+    color: #ffffff;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress>.progress-completed {
+    position: absolute;
+    right: 0px;
+    font-weight: 800;
+    padding: 3px 10px 2px;
+    color: #888;
+    font-size: 14px;
+}
+
+.skills-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    background: #08aeac;
+    width: 20%;
+    height: 1.8rem;
+}
+
+.progress-bar-2 {
+    background: #021533;
+}
+
+.progress-bar-3 {
+    background: #d9212a;
+}

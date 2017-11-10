@@ -13,7 +13,7 @@
 
 .container.about .text-zone h1 {
     font-size: 53px;
-    font-family: font-file-82132;
+    font-family: fantasy;
     color: #08fdd8;
     font-weight: normal;
     margin-top: 0;
@@ -23,7 +23,6 @@
 
 .container.about h1 .blast {
     opacity: 0;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
 
@@ -56,6 +55,6 @@
 }
 
 .container.about .text-zone .section-title {
-    margin-top: 0.5%;
+    margin-top: 35%;
     color: #fff;
 }

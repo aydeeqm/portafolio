@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Header from './Header';
-import Homepath from './Homepath'
 import {mydata} from './Data';
-import top from './img/top_5.png'
-import best from './img/best_squad.png';
+import top from './img/5mejores.png'
+import best from './img/best_squada.png';
 import rock from './img/ROCKING.png';
 import { connect } from 'redux-zero/react';
 import './css/body.css';
@@ -18,12 +17,15 @@ const Second_page = ({bio}) => {
                 <div class="text-zone">
                     <h1 aria-label=" About me" class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>A</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>b</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>o</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>u</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>t&nbsp;</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>m</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>c</span>
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>e</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>r</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>c</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>a&nbsp;</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>d</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>e&nbsp;</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>m</span>
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>i</span>
                     </h1>
                     <p aria-label="Everything started with passion to web technologies (Flash, HTML).&nbsp; In 2008 I got my first commercial work as a junior front-end developer in MUSO agency located in PL, Szczecin." class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
@@ -33,13 +35,13 @@ const Second_page = ({bio}) => {
                     <h2 className="section-title">{'<DISTINCIÓN DE LABORATORIA>'}</h2>
                     <div>
                         <span>
-                            <img src={top} />
+                            <img src={top} style={{ width: "8.5%", height: "12%" }}/>&nbsp;
                         </span>
                         <span>
-                            <img src={rock} />
+                            <img src={rock} />&nbsp;
                         </span>
                         <span>
-                            <img src={best} />
+                            <img src={best} />&nbsp;
                         </span>
                     </div>
                 </div>
