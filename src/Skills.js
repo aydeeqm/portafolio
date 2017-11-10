@@ -16,19 +16,19 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>&amp;</span>
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}> Experience</span>
                     </h1>
-                    <p aria-label="Main area of my expertise is front end development and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS (ES5,ES6), building small &amp; medium Web Apps, Angular , Vue.js, building custom plugins, features, animations and just coding layouts." class="blast-root">
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>Main area of my expertise is front end development and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS (ES5,ES6), building small &amp; medium Web Apps, Angular , Vue.js, building custom plugins, features, animations and just coding layouts.</span>
+                    <p aria-label="Main area of my expertise is front end development and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS (ES5,ES6), building small &amp; medium Web Apps, React , Vue.js, building custom plugins, features, animations and just coding layouts." class="blast-root">
+                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>El área principal de mi experiencia es el desarrollo de front-end y todo lo relacionado con este lado de la web. HTML, CSS, JS (ES5, ES6), creación de aplicaciones Web pequeñas y medianas, Angular, Vue.js, creación de complementos personalizados, características, animaciones y diseños de codificación simple.</span>
                     </p>
-                    <p aria-label="Often I work as a full-stack develeoper&nbsp; – mainly in Lamp environment, PHP and open source CMS’s like (WordPress, Drupal, Magento, Typo 3 etc..) ." class="blast-root">
+{/*                     <p aria-label="Often I work as a full-stack develeoper&nbsp; – mainly in Lamp environment, PHP and open source CMS’s like (WordPress, Drupal, Magento, Typo 3 etc..) ." class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>Often I work as a full-stack develeoper&nbsp; – mainly in Lamp environment, PHP and open source CMS’s like (WordPress, Drupal, Magento, Typo 3 etc..) .</span>
-                    </p>
-                    <p aria-label="I have also some experience with Node.js,&nbsp; Mongo DB (Keystone.JS)." class="blast-root">
+                    </p> */}
+{/*                     <p aria-label="I have also some experience with Node.js,&nbsp; Mongo DB (Keystone.JS)." class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>I have also some experience with Node.js,&nbsp; Mongo DB (Keystone.JS).</span>
-                    </p>
-                    <p aria-label="Would like to know more? Please check my LinkedIn profile or just&nbsp;contact me." class="blast-root">
+                    </p> */}
+{/*                     <p aria-label="Would like to know more? Please check my LinkedIn profile or just&nbsp;contact me." class="blast-root">
                         <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>Would like to know more? Please check my
                         <a href="https://www.linkedin.com/in/jacek-jeznach-0a99b640" target="_blank">LinkedIn</a> profile or just&nbsp;<a href="/contact">contact</a> me.</span>
-                    </p>
+                    </p> */}
                 </div>
                 <div class="skills-charts">
                     <div id="myCanvasContainer">
