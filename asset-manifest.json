@@ -1,11 +1,12 @@
 {
-  "main.css": "static/css/main.344b8f8a.css",
-  "main.css.map": "static/css/main.344b8f8a.css.map",
-  "main.js": "static/js/main.dfe2ccd3.js",
-  "main.js.map": "static/js/main.dfe2ccd3.js.map",
+  "main.css": "static/css/main.4d859cf1.css",
+  "main.css.map": "static/css/main.4d859cf1.css.map",
+  "main.js": "static/js/main.550cba6b.js",
+  "main.js.map": "static/js/main.550cba6b.js.map",
   "static\\media\\aydee.png": "static/media/aydee.b6ecb61c.png",
   "static\\media\\icomoon.eot?qx6tzk": "static/media/icomoon.fb4385af.eot",
   "static\\media\\icomoon.svg?qx6tzk": "static/media/icomoon.2205fdf6.svg",
   "static\\media\\icomoon.ttf?qx6tzk": "static/media/icomoon.114e4f81.ttf",
-  "static\\media\\icomoon.woff?qx6tzk": "static/media/icomoon.06ade6ef.woff"
+  "static\\media\\icomoon.woff?qx6tzk": "static/media/icomoon.06ade6ef.woff",
+  "static\\media\\last_paradise-webfont.ttf": "static/media/last_paradise-webfont.69d9ace3.ttf"
 }
