@@ -6,7 +6,7 @@
   text-rendering: optimizeLegibility; }
 
 #nav_bar {
-  background: #08fdd8;
+  background: #a5e0bd;
   width: 65px;
   height: 100%;
   position: absolute;
@@ -30,7 +30,7 @@
       position: relative;
       text-decoration: none; }
     #nav_bar nav a.active {
-      color: #08fdd8; }
+      color: #a5e0bd; }
     #nav_bar nav a:hover {
       color: #021414; }
     #nav_bar nav a:after {
@@ -62,7 +62,7 @@
         line-height: 16px;
         color: #021414; }
       #nav_bar ul li a:hover {
-        color: #08fdd8;
+        color: #a5e0bd;
         border-radius: 20px;
         background: #021414; }
 
@@ -73,10 +73,10 @@
   opacity: 0; }
 
 #nav_bar nav a.active {
-  color: #08fdd8;
+  color: #a5e0bd;
   background: #021414; }
   #nav_bar nav a.active #nav_bar nav a:hover {
-    color: #08fdd8;
+    color: #a5e0bd;
     font-weight: 600; }
 
 #nav_bar nav a:first-child:after {
@@ -216,20 +216,20 @@
   letter-spacing: 3px;
   animation: myanim2 1s 1.8s backwards; }
 .home-page .flat-button {
-  color: #08fdd8;
+  color: #a5e0bd;
   font-size: 11px;
   letter-spacing: 4px;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   padding: 8px 12px;
-  border: 1px solid #08fdd8;
+  border: 1px solid #a5e0bd;
   margin-top: 25px;
   float: left;
   border-radius: 3px;
   animation: myanim2 1s 1.8s backwards;
   white-space: nowrap; }
 .home-page .flat-button:hover {
-  background: #08fdd8;
+  background: #a5e0bd;
   color: #252627;
   font-weight: bold; }
 
