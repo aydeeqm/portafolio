@@ -5,9 +5,12 @@
     text-rendering: optimizeLegibility;
 }
 
+$colorblue:#08fdd8;
+$colorblack: #021414;
+
 #nav_bar {
-    background: #181818;
-    width: 60px;
+    background: $colorblue;
+    width: 65px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -25,7 +28,7 @@
 
         a {
             font-size: 22px;
-            color: #4d4d4e;
+            color: $colorblack;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -34,10 +37,10 @@
         }
 
         a.active{
-            color: #08fdd8
+            color: $colorblue;
         }
         a:hover {
-            color: #08fdd8
+            color: $colorblack;
         }
 
         a:after {
@@ -65,16 +68,20 @@
         margin: 0;
 
         li  {
+            padding: 0 16px;
            a {
                padding: 7px 0;
                display: block;
                font-size: 15px;
                line-height: 16px;
-               color: #4d4d4e
+               color: #021414
            }
 
            a:hover {
-               color: #08fdd8
+               color: $colorblue;
+                border-radius: 20px;
+                background: $colorblack;
+
            }
         }
     }
@@ -85,12 +92,27 @@
 }
 
 #nav_bar nav a:hover i {
-    opacity: 0
+    opacity: 0;
 }
 
-#nav_bar nav a.active,
-#nav_bar nav a:hover {
-    color: #08fdd8
+@mixin condicional($color){
+    color:($color);
+    @if $color == $colorblue{
+        #nav_bar nav a:hover {
+            color: $colorblue;
+            font-weight: 600;
+        }
+    }@else{
+        #nav_bar nav a:hover {
+            color: $colorblack;
+            font-weight: 600;
+        }
+    }
+}
+
+#nav_bar nav a.active{
+    @include condicional($colorblue);
+    background: #021414;
 }
 
 #nav_bar nav a:first-child:after {

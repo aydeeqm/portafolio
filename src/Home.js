@@ -19,7 +19,7 @@ const Init_page = ({ name, education, bio }) => {
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>S</span>
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>o</span>
         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>y&nbsp;</span>
-        <img src={logo} alt="Front-end Developer Name, Web Developer Name" className="animation-logo" style={{ width: "50px" }}/>
+        <span className="blast" aria-hidden="true" style={{opacity: "1"}}>A</span>
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>y</span>
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>d</span>
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>e</span>
@@ -40,7 +40,7 @@ const Init_page = ({ name, education, bio }) => {
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>.</span>
       </h1>
       <h2>Front End Developer / Javascript / React / Redux</h2> 
-      <a rel="contact" href="#" className="flat-button">CONTACT ME</a>
+      <NavLink className="flat-button" to={"/contact"}>CONTACT ME</NavLink>
       </div>
       <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt; </span>
       <div id="bulb" className="bulb">

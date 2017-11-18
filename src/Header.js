@@ -7,7 +7,7 @@ const Header = () => {
    return (   
        <div id="nav_bar">
            <a className="logo" rel="index" href="#">
-               <img src={photo} alt="Front-end Developer Logo, Web Developer Logo , Front End Developer Logo" style={{width: "100%"}} />
+               {/* <img src={photo} alt="Front-end Developer Logo, Web Developer Logo , Front End Developer Logo" style={{width: "100%"}} /> */}
            </a>
            <nav className="en">
                <NavLink rel="index" className="link-home" to={"/home"} exact path="/"><i className="icon-home"></i></NavLink>
@@ -22,7 +22,7 @@ const Header = () => {
                <li><a href="#" target="_blank"><i className="fa fa-facebook"></i></a></li>
                <li><a href="#" target="_blank"><i className="fa fa-github"></i></a></li>
            </ul>
-           <a id="mobile-link" href=""><i className="fa fa-bars"></i></a>
+           {/* <a id="mobile-link" href=""><i className="fa fa-bars"></i></a> */}
        </div>
    );
 }

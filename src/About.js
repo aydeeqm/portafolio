@@ -11,31 +11,22 @@ import './css/body.css';
 
 const Second_page = ({bio}) => {
     return (
-        <div id="page" class="en">
-            <div class="container about" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
-                <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
-                <div class="text-zone">
-                    <h1 aria-label=" About me" class="blast-root">
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>A</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>c</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>e</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>r</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>c</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>a&nbsp;</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>d</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>e&nbsp;</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>m</span>
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>i</span>
-                    </h1>
-                    <p aria-label="Everything started with passion to web technologies (Flash, HTML).&nbsp; In 2008 I got my first commercial work as a junior front-end developer in MUSO agency located in PL, Szczecin." class="blast-root">
-                        <span class="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
-                    </p>
-                </div>
+        <div id="page" className="en">
+            <div className="container about" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
+                <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
                 <div className="text-zone">
+                    <h1 aria-label=" About me" className="blast-root">
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>Acerca&nbsp;</span>
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>de&nbsp;</span>
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>mi</span>
+                    </h1>
+                    <p aria-label="Everything started with passion to web technologies (Flash, HTML).&nbsp; In 2008 I got my first commercial work as a junior front-end developer in MUSO agency located in PL, Szczecin." className="blast-root">
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
+                    </p>
                     <h2 className="section-title">{'<DISTINCIÓN DE LABORATORIA>'}</h2>
                     <div>
                         <span>
-                            <img src={top} style={{ width: "8.5%", height: "12%" }}/>&nbsp;
+                            <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
                         </span>
                         <span>
                             <img src={rock} />&nbsp;
@@ -45,39 +36,9 @@ const Second_page = ({bio}) => {
                         </span>
                     </div>
                 </div>
-                <div class="solar-system">
-                    <div class="sol"></div>
-                    <div class="neptune"></div>
-                    <div class="uranus"></div>
-                    <div class="saturn"></div>
-                    <div class="jupiter"></div>
-                    <div class="mars"></div>
-                    <div class="earth"></div>
-                    <div class="venus"></div>
-                    <div class="mercury"></div>
-                </div>
-                <span class="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
+                <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
             </div>
         </div>
-/*         <div className="section-vcardbody section-page ps-container ps-active-y section-page-active" id="page-resume" >
-            <div className="section-education">
-                <div className="section-education">
-                    <h2 className="section-title">{'<DISTINCIÓN DE LABORATORIA>'}</h2>
-                        <div>
-                            <div>
-                                <img src={top} />
-                            </div>
-                            <div>
-                                <img src={rock} />
-                            </div>
-                            <div>
-                                <img src={best} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div> */
     )
 }
 
@@ -91,7 +52,7 @@ const About = ({ mydata }) => {
       })
       return (
         <div>
-              <Header/>
+            <Header/>
             <section >
                 {aboutComponent}
             </section>

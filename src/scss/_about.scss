@@ -2,8 +2,6 @@
     position: absolute;
     left: 10%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
@@ -18,7 +16,7 @@
     font-weight: normal;
     margin-top: 0;
     position: relative;
-    margin-bottom: 40px
+    margin-bottom: 55px
 }
 
 .container.about h1 .blast {
@@ -50,11 +48,11 @@
     font-size: 13px;
     line-height: 18px;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300
 }
 
 .container.about .text-zone .section-title {
-    margin-top: 35%;
+    margin-top: 30px;
     color: #fff;
 }

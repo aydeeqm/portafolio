@@ -3,8 +3,9 @@
 @import '_about.scss';
 @import '_skills.scss';
 
+
 body {
-    background: #252627;
+    background: #021414;
     display: block;
     margin: 0;
     padding: 0;
@@ -28,6 +29,6 @@ body {
 
     .container.about .text-zone,
     .container.skills .text-zone {
-        width: 80%;
+        width: 50%;
         min-height: 0
     }

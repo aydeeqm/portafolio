@@ -4,8 +4,8 @@ import './index.css';
 import Home from './Home';
 import About from './About';
 import Skills from './Skills';
-/* import Project from './Project';
-import Contact from './Contact'; */
+import Works from './Project';
+import Contact from './Contact';
 import App from './App';
 import {Provider} from 'redux-zero/react'
 import store from './store'
@@ -21,8 +21,8 @@ const Index = () => (
             <Route  path = "/home" component={App}/>
             <Route  path = "/about" component={About}/>
             <Route  path = "/skill" component={Skills}/>
-{/*             <Route  path = "/project" component={Project}/>
-            <Route  path = "/contact" component={Contact}/> */}
+            <Route  path = "/project" component={Works}/>
+            <Route  path = "/contact" component={Contact}/>
         </Switch>
       </HashRouter>
    </Provider>
