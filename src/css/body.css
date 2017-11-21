@@ -6,7 +6,7 @@
   text-rendering: optimizeLegibility; }
 
 #nav_bar {
-  background: #bbfbe1;
+  background: #18c5a3;
   width: 65px;
   height: 100%;
   position: absolute;
@@ -23,16 +23,16 @@
     width: 100%; }
     #nav_bar nav a {
       font-size: 22px;
-      color: #021414;
+      color: #091624;
       display: block;
       line-height: 51px;
       height: 51px;
       position: relative;
       text-decoration: none; }
     #nav_bar nav a.active {
-      color: #bbfbe1; }
+      color: #18c5a3; }
     #nav_bar nav a:hover {
-      color: #021414; }
+      color: #091624; }
     #nav_bar nav a:after {
       content: '';
       font-size: 9px;
@@ -60,11 +60,11 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
-        color: #021414; }
+        color: #091624; }
       #nav_bar ul li a:hover {
-        color: #bbfbe1;
+        color: #18c5a3;
         border-radius: 20px;
-        background: #021414; }
+        background: #091624; }
 
 #nav_bar nav a i {
   transition: all 0.3s ease-out; }
@@ -73,10 +73,10 @@
   opacity: 0; }
 
 #nav_bar nav a.active {
-  color: #bbfbe1;
-  background: #021414; }
+  color: #18c5a3;
+  background: #091624; }
   #nav_bar nav a.active #nav_bar nav a:hover {
-    color: #bbfbe1;
+    color: #18c5a3;
     font-weight: 600; }
 
 #nav_bar nav a:first-child:after {
@@ -135,7 +135,8 @@
 #page {
   width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  background: linear-gradient(to right, #091624 0%, #0a1f2e 31%, #00353b 61%, #225757 100%); }
 
 @font-face {
   font-family: "last_paradise";
@@ -483,7 +484,7 @@ img {
 .home-page .text-zone h1 {
   overflow: hidden;
   /* Se asegura de que el efecto no ser├í revelado antes de aplicarse el efecto */
-  border-right: 5px solid #021414;
+  border-right: 5px solid #02192000;
   /* Cursor parpadeante */
   white-space: nowrap;
   /* Mantiene el contenido en una sola l├¡nea */
@@ -505,7 +506,7 @@ img {
     to {
     border-color: transparent; }
   40% {
-    border-color: #021414; } }
+    border-color: #02192000; } }
 .container.about .text-zone {
   position: absolute;
   left: 10%;
@@ -679,7 +680,7 @@ img {
   background: #d9212a; }
 
 body {
-  background: #021414;
+  /* background: #021920; */
   display: block;
   margin: 0;
   padding: 0;

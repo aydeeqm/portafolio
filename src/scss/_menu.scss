@@ -5,8 +5,8 @@
     text-rendering: optimizeLegibility;
 }
 
-$colorblue:#bbfbe1;
-$colorblack: #021414;
+$colorblue:#18c5a3;
+$colorblack: #091624;
 
 #nav_bar {
     background: $colorblue;
@@ -74,7 +74,7 @@ $colorblack: #021414;
                display: block;
                font-size: 15px;
                line-height: 16px;
-               color: #021414
+               color: $colorblack;
            }
 
            a:hover {
@@ -112,7 +112,7 @@ $colorblack: #021414;
 
 #nav_bar nav a.active{
     @include condicional($colorblue);
-    background: #021414;
+    background: $colorblack;
 }
 
 #nav_bar nav a:first-child:after {

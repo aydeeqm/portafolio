@@ -5,7 +5,7 @@
 
 
 body {
-    background: #021414;
+    /* background: #021920; */
     display: block;
     margin: 0;
     padding: 0;
@@ -14,21 +14,20 @@ body {
     user-select: none;
     overflow: auto;
 }
+.container.contact .text-zone h1:before,
+.container.skills .text-zone h1:before,
+.container.about .text-zone h1:before {
+    margin-top: -38px
+}
 
-  .container.contact .text-zone h1:before,
-  .container.skills .text-zone h1:before,
-  .container.about .text-zone h1:before {
-      margin-top: -38px
-  }
+.container.contact .text-zone h1:after,
+.container.skills .text-zone h1:after,
+.container.about .text-zone h1:after {
+    bottom: -44px
+}
 
-  .container.contact .text-zone h1:after,
-  .container.skills .text-zone h1:after,
-  .container.about .text-zone h1:after {
-      bottom: -44px
-  }
-
-    .container.about .text-zone,
-    .container.skills .text-zone {
-        width: 50%;
-        min-height: 0
-    }
+.container.about .text-zone,
+.container.skills .text-zone {
+    width: 50%;
+    min-height: 0
+}

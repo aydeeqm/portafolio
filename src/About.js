@@ -8,7 +8,6 @@ import rock from './img/ROCKING.png';
 import { connect } from 'redux-zero/react';
 import './css/body.css';
 
-
 const Second_page = ({bio}) => {
     return (
         <div id="page" className="en">
