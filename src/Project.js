@@ -3,14 +3,62 @@ import { NavLink } from 'react-router-dom';
 import Header from './Header';
 import { mydata } from './Data';
 import { connect } from 'redux-zero/react';
+import { Redirect, Switch, Route } from 'react-router-dom'
 import './css/body.css';
 
+const HTML = () => {
+            return (
+                <li className="course media group">
+                    <div>
+                        <h3>holii</h3>
+                    </div>
+                </li>
+    );
+}
 
-const Fourth_page = () => {
+const CSS = () => {
+    return (
+        <li className="course media group">
+            <div>
+                <h3>holii</h3>
+            </div>
+        </li>
+    );
+}
+
+const JavaScript = () => {
+            return (
+                <li  className="course media group">
+                    <div>
+                        <h3>hola</h3>
+                    </div>
+                </li>
+    );
+}
+
+const FourthPage = () => {
     return (
         <div id="page" className="en">
-            <div className="container about" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
+            <div className="container gallery" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
                 <span className="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+                <div className="project_container">
+                    <div className="project_controls">
+                        <NavLink type="button" to="/project/html" className="filter" >All</NavLink>
+                        <NavLink type="button" to="/project/css" className="filter" >Mis Proyectos</NavLink>
+                        <NavLink type="button" to="/project/javascript" className="filter" >Proyectos Colaborativos</NavLink>
+                    </div>
+                    <div>
+                        <ul>
+                            <Switch>
+                                <Route exact path="/project"
+                                    render={() => <Redirect to="/project/html" />} />
+                                <Route path="/project/html" component={HTML} />
+                                <Route path="/project/css" component={CSS} />
+                                <Route path="/project/javascript" component={JavaScript} />
+                            </Switch>
+                        </ul>
+                    </div>
+                </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
             </div>
         </div>
@@ -19,7 +67,7 @@ const Fourth_page = () => {
 
 const Works = ({ mydata }) => {
     const workComponent = mydata.map((item, index) => {
-        return <Fourth_page
+        return <FourthPage
             key={index}
             index={index}
         />

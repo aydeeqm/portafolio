@@ -22,7 +22,7 @@ const Second_page = ({bio}) => {
                     <p aria-label="Everything started with passion to web technologies (Flash, HTML).&nbsp; In 2008 I got my first commercial work as a junior front-end developer in MUSO agency located in PL, Szczecin." className="blast-root">
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
                     </p>
-                    <h2 className="section-title">{'<DISTINCIÓN DE LABORATORIA>'}</h2>
+                    <h2 className="section-title">{'< Disitinción de Laboratoria >'}</h2>
                     <div>
                         <span>
                             <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
@@ -44,9 +44,9 @@ const Second_page = ({bio}) => {
 const About = ({ mydata }) => {  
       const aboutComponent = mydata.map((item, index) => {
         return <Second_page
-          key={index}
-          bio={item.bio}
-          index={index}
+            key={index}
+            bio={item.bio}
+            index={index}
         />
       })
       return (

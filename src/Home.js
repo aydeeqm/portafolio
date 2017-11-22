@@ -47,29 +47,17 @@ const Init_page = ({ name, education, bio }) => {
         <a className="animated" href=""></a>
       </div>
       </div>
-      {/* <div class="wrapper">
-        <ul class="bg-bubbles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div> */}
+      <div class="view">
+        <div class="plane main">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      
       {/* <div className="bg" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
         <img className="jb" src={photo} alt="Front-end Developer Logo part" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }} />   
       </div> */}

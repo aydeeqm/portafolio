@@ -91,6 +91,15 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                                             <span className="progress-completed">60%</span>
                                         </div>
                                     </li>
+                                    <li>
+                                        <div className="progress">
+                                            <div className="progress-bar progress-bar-3" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
+                                                <span className="sr-only">60% Complete</span>
+                                            </div>
+                                            <span className="progress-type">Firebase</span>
+                                            <span className="progress-completed">60%</span>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
