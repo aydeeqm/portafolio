@@ -8,11 +8,17 @@ import './css/body.css';
 
 const HTML = () => {
             return (
-                <li className="course media group">
-                    <div>
-                        <h3>holii</h3>
+                <div class="mix graph_des" data-bound="" style={{display: "inline-block"}}>
+                    <div class="project ">
+                        <a class="work-popup" href="#">
+                            <div class="ovrly"></div>
+                            {/* <img src="img/portfolio/thumbs/image_1.jpg" alt=""/> */}
+                                <div class="effect_bubba">
+                                    <h2>Trello</h2>
+                                </div>
+                        </a>
                     </div>
-                </li>
+                </div>
     );
 }
 
