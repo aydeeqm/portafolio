@@ -10,9 +10,9 @@ import { connect } from 'redux-zero/react';
 import { Redirect, Switch, Route } from 'react-router-dom'
 import './css/body.css';
 
-const HTML = () => {
+const Mypro = () => {
     return (
-        <div className=" row items_portfolio">
+     <div className=" row items_portfolio">
         <div className="col-lg-12 col-md-12 col-ms-12">
                 <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
                 <div className="project">
@@ -65,7 +65,7 @@ const HTML = () => {
                     </a>
                 </div>
             </div>
-                <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+            <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
                 <div className="project ">
                     <a className="work-popup" href="#">
                         <div className="ovrly"></div>
@@ -82,7 +82,58 @@ const HTML = () => {
                     </a>
                 </div>
             </div>
-                <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+            <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                <div className="project ">
+                    <a className="work-popup" href="#">
+                        <div className="ovrly"></div>
+                        <img src={photo} alt="" className="img-responsive" />
+                        <div className="effect_bubba">
+                            <h2>Graphic Design</h2>
+                            <figcaption >
+                                <div className="classless">
+                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                <div className="project ">
+                    <a className="work-popup" href="#">
+                        <div className="ovrly"></div>
+                        <img src={photo} alt="" className="img-responsive" />
+                        <div className="effect_bubba">
+                            <h2>Graphic Design</h2>
+                            <figcaption >
+                                <div className="classless">
+                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                <div className="project ">
+                    <a className="work-popup" href="#">
+                        <div className="ovrly"></div>
+                        <img src={photo} alt="" className="img-responsive" />
+                        <div className="effect_bubba">
+                            <h2>Graphic Design</h2>
+                            <figcaption >
+                                <div className="classless">
+                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
                 <div className="project ">
                     <a className="work-popup" href="#">
                         <div className="ovrly"></div>
@@ -104,116 +155,77 @@ const HTML = () => {
     );
 }
 
-const CSS = () => {
-    return (
-        <div className="items_portfolio">
-            <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                <div className="project ">
-                    <a className="work-popup" href="#">
-                        <div className="ovrly"></div>
-                        <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                        <div className="effect_bubba">
-                            <h2>Graphic Design</h2>
-                            <figcaption >
-                                <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
-                                </div>
-                            </figcaption>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                <div className="project ">
-                    <a className="work-popup" href="#">
-                        <div className="ovrly"></div>
-                        <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                        <div className="effect_bubba">
-                            <h2>Graphic Design</h2>
-                            <figcaption >
-                                <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
-                                </div>
-                            </figcaption>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                <div className="project ">
-                    <a className="work-popup" href="#">
-                        <div className="ovrly"></div>
-                        <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                        <div className="effect_bubba">
-                            <h2>Graphic Design</h2>
-                            <figcaption >
-                                <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
-                                </div>
-                            </figcaption>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-const JavaScript = () => {
+const Colaborativos = () => {
             return (
-                <div className="items_portfolio">
-                    <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                        <div className="project ">
-                            <a className="work-popup" href="#">
-                                <div className="ovrly"></div>
-                                <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                                <div className="effect_bubba">
-                                    <h2>Graphic Design</h2>
-                                    <figcaption >
-                                        <div className="classless">
-                                            <div className="icon"><a href="#"><span className="fa fa-link"></span></a></div>
-                                            <a className="icon venobox vbox-item" href="#"><span className="fa fa-search"></span></a>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </a>
+                <div className=" row items_portfolio">
+                    <div className="col-lg-12 col-md-12 col-ms-12">
+                        <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                            <div className="project ">
+                                <a className="work-popup" href="#">
+                                    <div className="ovrly"></div>
+                                    <img src={photo} alt="" className="img-responsive" />
+                                    <div className="effect_bubba">
+                                        <h2>Graphic Design</h2>
+                                        <figcaption >
+                                            <div className="classless">
+                                                <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                                <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                            </div>
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                        <div className="project ">
-                            <a className="work-popup" href="#">
-                                <div className="ovrly"></div>
-                                <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                                <div className="effect_bubba">
-                                    <h2>Graphic Design</h2>
-                                    <figcaption >
-                                        <div className="classless">
-                                            <div className="icon"><a href="#"><span className="fa fa-link"></span></a></div>
-                                            <a className="icon venobox vbox-item" href="#"><span className="fa fa-search"></span></a>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </a>
+                        <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                            <div className="project ">
+                                <a className="work-popup" href="#">
+                                    <div className="ovrly"></div>
+                                    <img src={photo} alt="" className="img-responsive" />
+                                    <div className="effect_bubba">
+                                        <h2>Graphic Design</h2>
+                                        <figcaption >
+                                            <div className="classless">
+                                                <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                                <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                            </div>
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="mix graph_des" data-bound="" style={{ display: "inline-block" }}>
-                        <div className="project ">
-                            <a className="work-popup" href="#">
-                                <div className="ovrly"></div>
-                                <img src={photo} alt="" style={{ width: "200px", height: "200px" }} />
-                                <div className="effect_bubba">
-                                    <h2>Graphic Design</h2>
-                                    <figcaption >
-                                        <div className="classless">
-                                            <div className="icon"><a href="#"><span className="fa fa-link"></span></a></div>
-                                            <a className="icon venobox vbox-item" href="#"><span className="fa fa-search"></span></a>
-                                        </div>
-                                    </figcaption>
-                                </div>
-                            </a>
+                        <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                            <div className="project ">
+                                <a className="work-popup" href="#">
+                                    <div className="ovrly"></div>
+                                    <img src={photo} alt="" className="img-responsive" />
+                                    <div className="effect_bubba">
+                                        <h2>Graphic Design</h2>
+                                        <figcaption >
+                                            <div className="classless">
+                                                <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                                <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                            </div>
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="mix graph_des col-lg-3 col-sm-6 col-md-4 col-xs-6" data-bound="">
+                            <div className="project ">
+                                <a className="work-popup" href="#">
+                                    <div className="ovrly"></div>
+                                    <img src={photo} alt="" className="img-responsive" />
+                                    <div className="effect_bubba">
+                                        <h2>Graphic Design</h2>
+                                        <figcaption >
+                                            <div className="classless">
+                                                <div className="icon"><a href="#" target="_blank"><span className="fa fa-link"></span></a></div>
+                                                <a className="icon venobox vbox-item" href="#" target="_blank"><span className="fa fa-search"></span></a>
+                                            </div>
+                                        </figcaption>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,17 +246,15 @@ const FourthPage = () => {
                     <div className="portafolio-content">
                         <div className="project_container">
                             <div className="project_controls">
-                                <NavLink type="button" to="/project/all" className="filter" >All</NavLink>
-                                <NavLink type="button" to="/project/mispro" className="filter" >Mis Proyectos</NavLink>
+                                <NavLink type="button" to="/project/mypro" className="filter" >Mis Proyectos</NavLink>
                                 <NavLink type="button" to="/project/procolab" className="filter" >Proyectos Colaborativos</NavLink>
                             </div>
                             <div className="container-fluid">
                                 <Switch>
                                     <Route exact path="/project"
-                                        render={() => <Redirect to="/project/all" />} />
-                                    <Route path="/project/all" component={HTML} />
-                                    <Route path="/project/mispro" component={CSS} />
-                                    <Route path="/project/procolab" component={JavaScript} />
+                                        render={() => <Redirect to="/project/mypro" />} />
+                                    <Route path="/project/mypro" component={Mypro} />
+                                    <Route path="/project/procolab" component={Colaborativos} />
                                 </Switch>
                             </div>
                         </div>

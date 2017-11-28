@@ -4,7 +4,7 @@ export const mydata = [
         name: 'Aydee Quispe',
         campus: 'Arequipa',
         code: 'AQP20171051',
-        bio: 'Front End Developer, egresada de Laboratoria. Me encantan los desafíos, la lectura y todo lo relacionado con la tecnologia, mi deseo en el futuro es seguir especializandome y comvertirme en una programadora 100%.',
+        bio: 'Front End Developer, egresada de Laboratoria. Me encantan los desafíos, la lectura y todo lo relacionado con la tecnologia, mi deseo en el futuro es seguir especializandome y convertirme en una programadora 100%.',
         englishLevel: 'Intermedio',
         linkedin: 'linkedin.com/in/aydeequispe',
         portfolio: '',

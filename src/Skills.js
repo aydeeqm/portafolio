@@ -22,74 +22,49 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                 </div>
                 <div className="skills-charts">
                     <div className="section-skills">
-                        <h2 className="section-title">{title}</h2>
-                        <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+                        <div>
+                            <h2 className="section-title">{title}</h2>
+                            <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+                        </div>
+                        <div class="container-fluid wrap">
+                            <div className="col-lg-12 col-md-12 col-ms-12">
+                                <div class="progress-radial progress-85 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-html5-plain-wordmark colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-javascript-plain colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-80 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-css3-plain-wordmark colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-65 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-react-original-wordmark colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-75 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-jquery-plain-wordmark colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-85 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-sass-original colored"></i></div>
+                                </div>
+
+                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                    <div class="overlay"><i class="devicon-git-plain-wordmark colored"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 className="section-item-title-2"><i class="fa fa-delicious" aria-hidden="true"></i>&nbsp;&nbsp; Desing Skills</h3>
+                        </div>
                         <ul className="skills-list">
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-1" data-percent="80%" role="progressbar" style={{ width: "80%" }}>
-                                        <span className="sr-only">80% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-html5-plain"></i> HTML5</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-2" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
-                                        <span className="sr-only">60% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-css3-plain"></i> CSS3</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-3" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
-                                        <span className="sr-only">60% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-javascript-plain"></i> Javascript</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-4" data-percent="40%" role="progressbar" style={{ width: "40%" }}>
-                                        <span className="sr-only">40% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-jquery-plain"></i> Jquery</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-5" data-percent="70%" role="progressbar" style={{ width: "70%" }}>
-                                        <span className="sr-only">70% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-bootstrap-plain"></i> Bootstrap</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-6" data-percent="70%" role="progressbar" style={{ width: "70%" }}>
-                                        <span className="sr-only">70% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-git-plain"></i> Git</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-7" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
-                                        <span className="sr-only">60% Complete</span>
-                                    </div>
-                                    <span className="progress-type"> <i className="devicon-react-original"></i> React / Redux</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="progress">
-                                    <div className="progress-bar-8" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
-                                        <span className="sr-only">60% Complete</span>
-                                    </div>
-                                    <span className="progress-type"><i className="devicon-sass-original"></i> Sass</span>
-                                    {/* <span className="progress-completed">60%</span> */}
-                                </div>
-                            </li>
                             <li>
                                 <div className="progress">
                                     <div className="progress-bar-9" data-percent="60%" role="progressbar" style={{ width: "60%" }}>

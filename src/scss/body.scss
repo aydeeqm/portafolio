@@ -464,3 +464,10 @@ body {
         margin-bottom: 30px
     }
 }
+
+@media(max-width:390px) {
+    .home-page .text-zone h1 {
+        font-size: 12vw !important;
+        line-height: 45px !important;
+    }
+}
