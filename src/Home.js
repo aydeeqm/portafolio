@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import photo from './img/aydee.png';
-import logo from './img/title.png';
 import './css/body.css'; 
 
 const Init_page = ({ name, education, bio }) => {
@@ -43,20 +42,11 @@ const Init_page = ({ name, education, bio }) => {
       <NavLink className="flat-button" to={"/contact"}>CONTACT ME</NavLink>
       </div>
       <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt; </span>
-      <div id="bulb" className="bulb">
+{/*       <div id="bulb" className="bulb">
         <a className="animated" href=""></a>
+      </div> */}
       </div>
-      </div>
-      <div class="view">
-        <div class="plane main">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
+      <div className="photohome"></div>
       
       {/* <div className="bg" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
         <img className="jb" src={photo} alt="Front-end Developer Logo part" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }} />   

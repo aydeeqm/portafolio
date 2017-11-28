@@ -1,14 +1,60 @@
 /*----------------------
     Proyect
 ----------------------*/
-.container.gallery {
+.gallery {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
     position: absolute;
-    min-height: 1200px
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.container .portafolio {
+    position: absolute;
+    width: 100%;
+}
+
+.portafolio-content,
+.portafolio-title {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_title {
+    align-self: flex-start;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.section_title h2 {
+    font-size: 50px;
+    color: #08fdd8;
+    font-weight: 400;
+    line-height: 48px;
+    font-family: fantasy;
+}
+
+.project_container{
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
 }
 
 .project_controls {
     padding: 0 0 20px 0;
-    margin-top: 8%;
+    margin-top: 3%;
     text-align: center;
 }
 
@@ -19,21 +65,14 @@
     margin: 10px 0;
     padding: 6px 19px;
     transition: all 0.3s;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-a:focus {
-    outline: 0;
+.work-popup:focus {
     outline: 0;
     outline-offset: 0;
 }
-
-/* .isotopeFilters {
-    text-align: center;
-}
-
-.container_filter {
-    text-align: center;
-} */
 
 .filter:hover {
     color: #fff;
@@ -42,14 +81,14 @@ a:focus {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* .project img {
-    max-width: 100%;
-    height: auto;
+.project img {
+    width: 100%;
+    height: 165px;
     display: block;
 }
 
 .project .ovrly {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.685);
     position: absolute;
     height: 100%;
     left: 0;
@@ -71,10 +110,6 @@ a:focus {
     box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-.filter-section {
-    overflow: hidden;
-}
-
 .effect_bubba {
     position: absolute;
     top: 0;
@@ -82,16 +117,17 @@ a:focus {
     width: 100%;
     height: 100%;
     text-align: center;
+    border: 5px solid #08fdd8;
     transition: all 0.30s ease-in-out;
 
 }
 
 .effect_bubba:before {
     position: absolute;
-    top: 30px;
-    right: 20px;
-    bottom: 30px;
-    left: 20px;
+    top: 60px;
+    right: 10px;
+    bottom: 60px;
+    left: 10px;
     content: '';
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
@@ -102,10 +138,10 @@ a:focus {
 
 .effect_bubba:after {
     position: absolute;
-    top: 20px;
-    right: 30px;
-    bottom: 20px;
-    left: 30px;
+    top: 50px;
+    right: 20px;
+    bottom: 50px;
+    left: 20px;
     content: '';
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
@@ -127,6 +163,73 @@ a:focus {
     transition: all 0.30s ease-in-out;
 }
 
+.effect_bubba:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+}
+
+.effect_bubba figcaption {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.effect_bubba .classless span {
+    line-height: 30px;
+    width: 30px;
+    position: relative;
+    transition: 0.3s;
+    text-align: center;
+    color: #fffefe;
+}
+
+.effect_bubba .classless .icon+.icon {
+    margin-left: 15px;
+}
+
+.effect_bubba .classless .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.effect_bubba .classless .icon:hover span {
+    color: #08fdd8;
+}
+
+.effect_bubba .classless .icon:hover:before {
+    border-color: #08fdd8;
+}
+
+.effect_bubba .classless .icon:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    content: '';
+}
+
+.project:hover .classless{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.classless {
+    margin-top: 15px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(-20px);
+}
+
+.classless .icon {
+    cursor: pointer;
+}
+
 .items_portfolio .project:hover .effect_bubba:before,
 .items_portfolio .project:hover .effect_bubba:after {
     opacity: 1;
@@ -138,7 +241,7 @@ a:focus {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 
 .project_controls a.active,
 .filter.active,
@@ -148,3 +251,11 @@ a:focus {
     color: #091624;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
+
+.items_portfolio{
+    padding-left: 6%;
+}
+
+/* .mix{
+    margin: 0 10px;
+} */

@@ -19,7 +19,9 @@
     top: 5%;
     margin: 0 auto;
     z-index: 1;
-    transform-style: preserve-3d
+    transform-style: preserve-3d;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .text-zone {
@@ -52,10 +54,10 @@
 .home-page {
     .text-zone {
         position: absolute;
-        left: 10%;
+        left: 12%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        /* width: 40%; */
         max-height: 90%;
         a {
             font-weight: normal
@@ -72,6 +74,7 @@
         &:before {
             content: '<h1>';
             font-family: 'La Belle Aurore', cursive;
+            /* font-family: 'Roboto Mono', monospace; */
             color: #515152;
             font-size: 18px;
             position: absolute;
@@ -80,6 +83,7 @@
         &:after {
             content: '<h1/>';
             font-family: 'La Belle Aurore', cursive;
+            /* font-family: 'Roboto Mono', monospace; */
             color: #515152;
             font-size: 18px;
             position: absolute;
@@ -107,13 +111,13 @@
     }
 
     .flat-button {
-        color: #bbfbe1;
+        color: #08fdd8;
         font-size: 11px;
         letter-spacing: 4px;
         font-family: "Open Sans", sans-serif;
         text-decoration: none;
         padding: 8px 12px;
-        border: 1px solid #bbfbe1;
+        border: 1px solid #08fdd8;
         margin-top: 25px;
         float: left;
         border-radius: 3px;
@@ -122,7 +126,7 @@
     }
 
     .flat-button:hover {
-        background: #bbfbe1;
+        background: #08fdd8;
         color: #252627;
         font-weight: bold;
     }
@@ -253,102 +257,18 @@ img {
     }
 }
 
-/* Efecto mundo */
-$side: 120px;
-$l: 90px;
-$num: 10;
-$dur: 10s;
-
-@mixin plane($w, $h){
-    width: $w;
-    height: $h;
-    transform-style: preserve-3d;
-}
-
-  
-@mixin view($p){
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    perspective: $p;
-}
-
-
-@mixin center{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-     
-html, body{
-    background: #222;
-    overflow: hidden;
+.photohome{
+    display: flex;
+    /*     justify-content: flex-end; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
+    background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.655) 61%, rgba(34, 87, 87, 0.504) 100%),
+    url('../img/laptop.png');
+    /*     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.855) 61%, rgba(34, 87, 87, 0.704) 100%) */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
 }
-
-.view{
-   @include view(400);
-}
-  
-    
-.plane{
-    @include plane($side, $side);
-    &.main{
-       @include center;
-        transform: rotateX(60deg) rotateZ(-30deg);
-        animation: rotate 20s infinite linear;
-        .circle{
-            width: $side;
-            height: $side;
-            position: absolute;
-            transform-style: preserve-3d;
-            border-radius: 100%;
-            //border: 2px solid white
-            box-sizing: border-box;
-            box-shadow: 0 0 60px rgba(rgb(18, 223, 223), 1), inset 0 0 60px rgba(rgb(20, 207, 220), 1);
-            &::before, &::after{
-                content: '';
-                display: block;
-                @include center;
-                width: 10%;
-                height: 10%;
-                border-radius: 100%;
-                background: rgba(rgb(20, 213, 220), 1);
-                //border: 4px solid black
-                box-sizing: border-box;
-                box-shadow: 0 0 60px 2px rgba(rgb(20, 197, 220), 1);
-            }
-            &::before{
-               transform: translateZ(-$l) 
-            }
-        
-            &::after{
-                transform: translateZ($l) 
-            }
-             @for $i from 1 through 5{
-                 &:nth-child(#{$i}){
-                     transform: rotateZ($i / 5 * 360deg) rotateX(63.435deg);
-                 }
-             }
-        }
-
-    }
-    
-}
-@keyframes rotate{
-  0%{
-    transform: rotateX(0) rotateY(0) rotateZ(0)
-  }
-    
-  100%{
-    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) 
-  }
-     
-}
-  

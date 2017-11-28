@@ -3,10 +3,8 @@
 ========================================================== */
 .container.skills .text-zone {
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 30%;
     vertical-align: middle;
@@ -28,7 +26,6 @@
 
 .container.skills h1 .blast {
     opacity: 0;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
 
@@ -61,31 +58,30 @@
 }
 
 .skills-charts {
-    position: absolute;
-    width: 80%;
-    right: -15%;
-    left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* position: absolute; */
+    width: 100%;
     height: 100%;
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 2
+    z-index: 2;
 }
-
-#myCanvasContainer {
-    position: relative;
-    width: 100%
-}
-
-#myCanvas {
-    position: absolute;
-    top: 400px;
-    left: 405px;
-    right: 0px;
-    bottom: 0;
-    margin: auto;
-    width: auto;
-    height: 100%
+.section-skills{
+    width: 50%;
+    padding: 0 0 0 95px;
+    h2{
+        color: #08fdd8;
+        font-size: 20px;
+        text-align: center;
+    }
+    h3{
+        color: #08fdd8;
+        font-size: 17px;
+        text-align: center;
+    }
 }
 
 .skills-list {
@@ -95,7 +91,9 @@
 
 .progress {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
+    height: 31px;
+    width: 100%;
 }
 
 .progress>.progress-type {
@@ -104,33 +102,63 @@
     font-size: 13px;
     padding: 3px 30px 5px 10px;
     color: #ffffff;
+    height: 100%;
     background-color: rgba(25, 25, 25, 0.2);
 }
+.progress>.progress-type i {
+    font-size: 22px;
+}
 
-.progress>.progress-completed {
+/* .progress>.progress-completed {
     position: absolute;
     right: 0px;
     font-weight: 800;
     padding: 3px 10px 2px;
     color: #888;
     font-size: 14px;
-}
+} */
 
 .skills-list {
     list-style: none;
-    margin-bottom: 40px;
 }
 
-.progress-bar {
-    background: #08aeac;
-    width: 20%;
-    height: 2rem;
+.progress-bar-1 {
+    background: #e98101;
 }
 
 .progress-bar-2 {
-    background: #021533;
+    background: #3470e1;
 }
 
 .progress-bar-3 {
-    background: #d9212a;
+    background: #f2e200;
 }
+
+.progress-bar-4 {
+    background: #285ab8;
+}
+
+.progress-bar-5 {
+    background: #8d0594;
+}
+
+.progress-bar-6 {
+    background: #c43206;
+}
+
+.progress-bar-7 {
+    background: #07d1d8;
+}
+
+.progress-bar-8 {
+    background: #e61de6;
+}
+
+.progress-bar-9 {
+    background: #e9a11c;
+}
+
+.progress-bar-10 {
+    background: #3472e4;
+}
+

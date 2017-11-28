@@ -3,10 +3,11 @@
 @import '_about.scss';
 @import '_skills.scss';
 @import '_project.scss';
+@import '_contact.scss';
 
 
 body {
-    /* background: #021920; */
+    background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%);
     display: block;
     margin: 0;
     padding: 0;
@@ -29,6 +30,437 @@ body {
 
 .container.about .text-zone,
 .container.skills .text-zone {
-    width: 50%;
+    width: 39%;
     min-height: 0
+}
+
+/* ********************RESPONSIVE***************************** */
+
+@media(min-width:1100px) and (min-height:900px) {
+    h1 {
+        font-size: 73px !important;
+        line-height: 67px !important
+    }
+    .home-page h2 {
+        font-size: 14px !important
+    }
+    .text-zone p {
+        font-size: 16px !important;
+        line-height: 21px !important
+    }
+    .container.contact .text-zone h1:before,
+    .container.skills .text-zone h1:before,
+    .container.about .text-zone h1:before {
+        margin-top: -38px
+    }
+    .container.contact .text-zone h1:after,
+    .container.skills .text-zone h1:after,
+    .container.about .text-zone h1:after {
+        bottom: -44px
+    }
+    .bg {
+        transform: scale(1.2)
+    }
+    .home-page h1 img {
+        width: 38px
+    }
+}
+
+@media(min-width:960px) and (max-height:800px) {
+    .container.about .text-zone img {
+        display: none
+    }
+}
+
+@media(max-width:1024px) {
+    .container.contact .text-zone {
+        width: 36%
+    }
+
+    h1 {
+        font-size: 54px !important;
+        line-height: 45px
+    }
+    .container.about .text-zone {
+        width: 40%
+    }
+    .text-page .text-zone h1:after,
+    .container.about .text-zone h1:after,
+    .container.contact .text-zone h1:after {
+        bottom: -40px
+    }
+    .text-page .text-zone h1:before,
+    .container.about .text-zone h1:before,
+    .container.contact .text-zone h1:before {
+        margin-top: -29px
+    }
+    .home-page .text-zone,
+    .text-page .text-zone {
+        width: 90%;
+        min-height: 0
+    }
+    .text-page .right-col {
+        margin-top: 10px;
+        position: static !important;
+        max-height: auto;
+        float: left;
+        margin-left: 10%;
+        transform: none !important
+    }
+    #pyramid {
+        display: none
+    }
+    .bg {
+        width: 263px;
+        height: 400px
+    }
+/*     .text-zone {
+        margin-top: 150px !important
+    } */
+}
+
+@media(max-width:800px) and (orientation :landscape) {
+    #rotate {
+        position: fixed;
+        /* background: #212121 url(//jacekjeznach.com/wp-content/themes/jj/css/../img/rotate.jpg) no-repeat center; */
+        background-size: 100% auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999999999;
+        display: block !important;
+        opacity: 1 !important
+    }
+/*     #page {
+        display: none !important
+    } */
+}
+
+@media(max-width:960px) {
+    #world {
+        position: relative !important;
+        width: 90% !important;
+        height: auto !important;
+        margin: auto
+    }
+    #page {
+        height: auto;
+        position: relative
+    }
+    .skills-charts {
+        position: relative;
+        left: 0;
+        width: 80%;
+        top: 0;
+        transform: translateY(0%);
+        clear: both;
+        margin: auto;
+        overflow: hidden
+    }
+    .white .logo {
+        padding-bottom: 4px
+    }
+    #nav_bar {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        min-height: 0
+    }
+    .white #nav_bar {
+        border-right: 0;
+        border-bottom: 1px solid #f4f4f4
+    }
+    .logo {
+        float: left;
+        padding: 2px 0;
+        margin-right: 20px
+    }
+    .logo img {
+        display: block;
+        margin: 0 15px;
+        width: auto;
+        height: auto
+    }
+    .logo>img:first-child {
+        height: 60px
+    }
+    .lang {
+        float: left;
+        width: auto;
+        margin-top: 0;
+        line-height: 60px
+    }
+    .lang a {
+        margin-top: 0;
+        display: inline;
+        margin-right: 7px;
+    }
+    #nav_bar nav {
+        width: 42%;
+        position: absolute;
+        left: 47%;
+        margin-left: -19%;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        height: 60px;
+        top: 0;
+        margin-top: 0
+    }
+    #nav_bar nav a {
+        float: left;
+        margin-left: 14%;
+        line-height: 60px;
+        height: 60pxs
+    }
+    #nav_bar nav a:first-child {
+        margin-left: 0
+    }
+    #nav_bar nav a.active {
+        width: 17%;
+    }
+    #nav_bar ul {
+        position: static;
+        bottom: 20px;
+        width: auto;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        float: right
+    }
+    #nav_bar ul li {
+        float: right;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 10px;
+        padding: 17px 0;
+    }
+
+    #nav_bar ul li a {
+        padding: 4px 0;
+    }
+    #nav_bar ul li a:hover {
+        width: 25px;
+    }
+    .container {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding-bottom: 58px;
+        box-sizing: border-box;
+        position: relative;
+        top: 0;
+        overflow: hidden
+    }
+    .bg {
+        right: 0;
+        left: 0;
+        opacity: .5
+    }
+    .container.gallery {
+        position: absolute;
+        min-height: 1200px
+    }
+    .magicwall .magicwall-grid {
+        margin-left: 0;
+        margin-top: 60px
+    }
+    .tags {
+        margin-left: 10px;
+        left: 0
+    }
+    .top-tags {
+        bottom: auto;
+        top: 76px
+    }
+    .bottom-tags {
+        position: absolute;
+        clear: both;
+        float: left;
+        margin-top: 22px;
+        bottom: 0
+    }
+    .text-zone {
+        position: static !important;
+        max-height: auto;
+        min-height: 350px;
+        float: left;
+        margin-left: 10%;
+        transform: none !important;
+        margin-top: 170px
+    }
+    .container.about .text-zone,
+    .container.skills .text-zone {
+        width: 80%;
+        min-height: 0
+    }
+
+    .section-skills {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .solar-system {
+        display: none
+    }
+    #myCanvasContainer {
+        position: relative;
+        margin: 0 10% !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: block;
+        clear: both;
+        width: 80%;
+        height: auto
+    }
+    #myCanvas {
+        position: relative;
+        width: 100%;
+        margin: 0
+    }
+    body {
+        overflow: auto
+    }
+    .blog-link {
+        display: none
+    }
+    .container.contact .text-zone {
+        width: 80%
+    }
+    .map-wrap {
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        height: 320px;
+        clear: both
+    }
+    .inf-map {
+        top: auto;
+        right: 5%;
+        bottom: 50px
+    }
+}
+
+@media(max-width:750px) {
+    #nav_bar nav a {
+        margin-left: 10%
+    }
+    h1 {
+        font-size: 47px !important;
+        line-height: 40px !important
+    }
+    .chart.small {
+        display: none
+    }
+}
+
+@media(max-width:575px){
+    .project img {
+        height: 260px;
+    }
+
+}
+
+@media(max-width:530px) {
+    .preloader .inner {
+        width: 80%
+    }
+    #awwwards {
+        display: none
+    }
+    #mobile-link {
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        margin: 10px 20px 10px 10px;
+        display: block
+    }
+    #nav_bar ul {
+        display: none
+    }
+    .home-page .text-zone {
+        width: 85%;
+        left: 5%
+    }
+    #nav_bar nav a.active {
+        width: 17%;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+    .home-page h1:after {
+        display: none
+    }
+    .chart-group {
+        width: 50%;
+        margin-bottom: 30px
+    }
+    .chart-group .chart:first-child {
+        margin: 0 auto 40px auto
+    }
+    .inf-map {
+        margin-left: 10%;
+        width: 80%;
+        position: static;
+        clear: both
+    }
+    .inf-map>span {
+        position: relative;
+        top: -10px
+    }
+    #nav_bar {
+        position: fixed
+    }
+    #nav_bar nav {
+        width: 100%;
+        position: fixed;
+        left: 100%;
+        opacity: 0;
+        margin-left: 0;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        height: 60px;
+        top: 60px;
+        margin-top: 0;
+        background: #63a5a2;
+        transition: all .3s ease-out
+    }
+    .white #nav_bar nav {
+        background: #fff
+    }
+    #nav_bar nav a {
+        float: left;
+        margin-left: 0 !important;
+        line-height: 60px;
+        height: 60px;
+        width: 20%
+    }
+    #nav_bar nav.show {
+        left: 0;
+        opacity: 1
+    }
+    .contact-form ul li.half {
+        width: 100%;
+        margin-left: 0
+    }
+    .preloader .inner {
+        top: 20px
+    }
+}
+
+@media(max-width:440px) {
+    .chart-group {
+        width: 100%;
+        margin-bottom: 30px
+    }
 }

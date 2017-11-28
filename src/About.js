@@ -5,6 +5,7 @@ import {mydata} from './Data';
 import top from './img/5mejores.png'
 import best from './img/best_squada.png';
 import rock from './img/ROCKING.png';
+import fondo from './img/fondoabout.jpg';
 import { connect } from 'redux-zero/react';
 import './css/body.css';
 
@@ -37,6 +38,7 @@ const Second_page = ({bio}) => {
                 </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
             </div>
+            <div className="photoportada"></div>
         </div>
     )
 }
