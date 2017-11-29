@@ -18,7 +18,7 @@ const Last_page = () => {
                             <span className="blast" aria-hidden="true" style={{ opacity: 1}}>o</span>
                             <span className="blast" aria-hidden="true" style={{ opacity: 1}}>n</span>
                             <span className="blast" aria-hidden="true" style={{opacity: 1}}>t</span>
-                            <span className="blast" aria-hidden="true" style={{opacity: 1}}>a</span>
+                            <span className="blast" aria-hidden="true" style={{opacity: 1}}>á</span>
                             <span className="blast" aria-hidden="true" style={{opacity: 1}}>c</span>
                             <span className="blast" aria-hidden="true" style={{opacity: 1}}>t</span>
                             <span className="blast" aria-hidden="true" style={{ opacity: 1 }}>a</span>

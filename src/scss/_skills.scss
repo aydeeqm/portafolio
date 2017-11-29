@@ -14,7 +14,7 @@
 
 .container.skills .text-zone h1 {
     font-size: 53px;
-    font-family: fantasy;
+    font-family: 'Audiowide', cursive;
     color: #08fdd8;
     font-weight: normal;
     line-height: 50px;
@@ -50,11 +50,11 @@
 }
 
 .container.skills .text-zone p {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
 }
 
 .skills-charts {
@@ -74,12 +74,14 @@
 /*     padding: 0 0 0 95px; */
     h2{
         color: #08fdd8;
+        font-family: 'Audiowide', cursive;
         font-size: 20px;
         text-align: center;
     }
     h3{
         color: #08fdd8;
         font-size: 17px;
+        font-family: 'Audiowide', cursive;
         text-align: center;
     }
 }

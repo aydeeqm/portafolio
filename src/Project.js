@@ -14,7 +14,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-1">
                         <div class="ch-info">
                             <h3>Trello Phoenix</h3>
-                            <p>by Aydee QM <a href="https://aydeeqm.github.io/Trello-redux/">View on Github</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -28,7 +27,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-2">
                         <div class="ch-info">
                             <h3>Timer Score</h3>
-                            <p>by Aydee QM <a href="https://https://aydeeqm.github.io/TIMER-SCORED/">View on Github</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -42,7 +40,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-3">
                         <div class="ch-info">
                             <h3>Register</h3>
-                            <p>by Aydee QM <a href="https://https://aydeeqm.github.io/MVC-REGISTER/">View on Github</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -56,7 +53,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-4">
                         <div class="ch-info">
                             <h3>Memory Game</h3>
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -70,7 +66,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-5">
                         <div class="ch-info">
                             <h3>Start Studio</h3>
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -84,7 +79,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-6">
                         <div class="ch-info">
                             <h3>Brainiac</h3>
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -98,7 +92,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-7">
                         <div class="ch-info">
                             <h3>Brainiac</h3>
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -112,7 +105,6 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-8">
                         <div class="ch-info">
                             <h3>Brainiac</h3>
-                            <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>

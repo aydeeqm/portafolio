@@ -14,7 +14,7 @@
 
 .container.about .text-zone h1 {
     font-size: 53px;
-    font-family: fantasy;
+    font-family: 'Audiowide', cursive;
     color: #08fdd8;
     font-weight: normal;
     margin-top: 0;
@@ -48,17 +48,14 @@
 }
 
 .container.about .text-zone p {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
 
-.container.about .text-zone .section-title {
-    margin-top: 30px;
-    color: #fff;
-}
 .photoportada{
     display: flex;
 /*     justify-content: flex-end; */
@@ -67,7 +64,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(34, 87, 87, 0.504) 0%, rgba(0, 53, 59, 0.655) 31%, rgba(10, 31, 46, 0.933) 61%, rgba(9, 22, 36, 1) 100%),
-    url('../img/portada.png');
+    url('../img/portadacom.jpg');
 /*     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.855) 61%, rgba(34, 87, 87, 0.704) 100%) */
     background-position: center;
     background-repeat: no-repeat;
@@ -75,4 +72,23 @@
     transform: scaleX(-1);
     filter: FlipH;
     flex-direction: column;
+}
+
+.sound-cloud {
+    will-change: contents;
+    margin-top: 100px;
+    width: 40%;
+    top: 20%;
+    bottom: auto;
+    position: fixed;
+    left: auto;
+    right: 8%;
+    overflow: hidden;
+    z-index: -1;
+    text-align: center;
+    .section-title {
+        margin-top: 25px;
+        color: #fff;
+        font-family: 'Audiowide', cursive;
+    }
 }

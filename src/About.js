@@ -20,21 +20,21 @@ const Second_page = ({bio}) => {
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>de&nbsp;</span>
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>mi</span>
                     </h1>
-                    <p aria-label="Everything started with passion to web technologies (Flash, HTML).&nbsp; In 2008 I got my first commercial work as a junior front-end developer in MUSO agency located in PL, Szczecin." className="blast-root">
+                    <p aria-label="Hola." className="blast-root">
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
                     </p>
+                </div>
+                <div className="sound-cloud">
                     <h2 className="section-title">{'< Disitinción de Laboratoria >'}</h2>
-                    <div>
-                        <span>
-                            <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
+                    <span>
+                        <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
                         </span>
-                        <span>
-                            <img src={rock} />&nbsp;
+                    <span>
+                        <img src={rock} />&nbsp;
                         </span>
-                        <span>
-                            <img src={best} />&nbsp;
+                    <span>
+                        <img src={best} />&nbsp;
                         </span>
-                    </div>
                 </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
             </div>

@@ -164,23 +164,32 @@
 @font-face {
   font-family: "last_paradise";
   src: url("../fonts/last_paradise-webfont.ttf"); }
-.text-zone p {
-  font-size: 14px !important;
-  color: #fff; }
-  .text-zone p a {
-    color: #08fdd8;
-    text-decoration: underline; }
-    .text-zone p a span {
-      color: #08fdd8;
-      text-decoration: underline; }
-    .text-zone p a:hover {
-      color: #fff; }
-      .text-zone p a:hover span:hover {
-        color: #fff; }
-.text-zone h2 {
-  color: #fff;
-  font-size: 16px; }
+/* .text-zone {
+    p {
+        font-size: 14px !important;
+        color: #fff;
+        a {
+            color: #08fdd8;
+            text-decoration: underline;
+            span {
+                color: #08fdd8;
+                text-decoration: underline
+            }
+            &:hover {
+                color: #fff;
+                span:hover {
+                    color: #fff;
+                }
+            }
 
+        }
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 16px
+    }
+} */
 .home-page .text-zone {
   position: absolute;
   left: 12%;
@@ -350,7 +359,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #091624 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.655) 61%, rgba(34, 87, 87, 0.504) 100%), url("../img/laptop.png");
+  background: linear-gradient(to right, #091624 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.655) 61%, rgba(34, 87, 87, 0.504) 100%), url("../img/laptopcom.jpg");
   /*     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.855) 61%, rgba(34, 87, 87, 0.704) 100%) */
   background-position: center;
   background-repeat: no-repeat;
@@ -372,7 +381,7 @@ img {
 
 .container.about .text-zone h1 {
   font-size: 53px;
-  font-family: fantasy;
+  font-family: 'Audiowide', cursive;
   color: #08fdd8;
   font-weight: normal;
   margin-top: 0;
@@ -402,15 +411,12 @@ img {
   margin-left: 20px; }
 
 .container.about .text-zone p {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
   font-weight: 300; }
-
-.container.about .text-zone .section-title {
-  margin-top: 30px;
-  color: #fff; }
 
 .photoportada {
   display: flex;
@@ -419,7 +425,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(34, 87, 87, 0.504) 0%, rgba(0, 53, 59, 0.655) 31%, rgba(10, 31, 46, 0.933) 61%, #091624 100%), url("../img/portada.png");
+  background: linear-gradient(to right, rgba(34, 87, 87, 0.504) 0%, rgba(0, 53, 59, 0.655) 31%, rgba(10, 31, 46, 0.933) 61%, #091624 100%), url("../img/portadacom.jpg");
   /*     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 0.933) 31%, rgba(0, 53, 59, 0.855) 61%, rgba(34, 87, 87, 0.704) 100%) */
   background-position: center;
   background-repeat: no-repeat;
@@ -427,6 +433,23 @@ img {
   transform: scaleX(-1);
   filter: FlipH;
   flex-direction: column; }
+
+.sound-cloud {
+  will-change: contents;
+  margin-top: 100px;
+  width: 40%;
+  top: 20%;
+  bottom: auto;
+  position: fixed;
+  left: auto;
+  right: 8%;
+  overflow: hidden;
+  z-index: -1;
+  text-align: center; }
+  .sound-cloud .section-title {
+    margin-top: 25px;
+    color: #fff;
+    font-family: 'Audiowide', cursive; }
 
 /* ==========================================================
 ! 4. SECTION: SKILLS
@@ -443,7 +466,7 @@ img {
 
 .container.skills .text-zone h1 {
   font-size: 53px;
-  font-family: fantasy;
+  font-family: 'Audiowide', cursive;
   color: #08fdd8;
   font-weight: normal;
   line-height: 50px;
@@ -475,11 +498,11 @@ img {
   margin-left: 20px; }
 
 .container.skills .text-zone p {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px; }
 
 .skills-charts {
   display: flex;
@@ -498,11 +521,13 @@ img {
   /*     padding: 0 0 0 95px; */ }
   .section-skills h2 {
     color: #08fdd8;
+    font-family: 'Audiowide', cursive;
     font-size: 20px;
     text-align: center; }
   .section-skills h3 {
     color: #08fdd8;
     font-size: 17px;
+    font-family: 'Audiowide', cursive;
     text-align: center; }
 
 .skills-list {
@@ -874,11 +899,12 @@ img {
 #mySidenav a {
   position: absolute;
   left: -96px;
+  font-family: 'Audiowide', cursive;
   transition: 0.3s;
-  padding: 4px 15px 4px 69px;
+  padding: 5px 15px 5px 69px;
   width: 175px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 12px;
   color: white;
   border-radius: 0 5px 5px 0; }
 
@@ -911,7 +937,7 @@ img {
 
 .container.contact .text-zone h1 {
   font-size: 53px;
-  font-family: fantasy;
+  font-family: 'Audiowide', cursive;
   color: #08fdd8;
   font-weight: normal;
   margin-top: 0;
@@ -942,11 +968,11 @@ img {
   margin-left: 20px; }
 
 .container.contact .text-zone p {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300; }
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px; }
 
 .contact-form {
   width: 100%; }
@@ -1126,10 +1152,13 @@ input:focus:-ms-input-placeholder {
   #map .frase {
     text-align: center; }
     #map .frase p {
-      color: tomato;
+      color: #ffdd47;
       font-size: 40px;
       font-family: 'Lobster', cursive; }
 
+/* *{
+    outline: 1px red solid;
+} */
 body {
   background: linear-gradient(to right, #091624 0%, #0a1f2e 31%, #00353b 61%, #225757 100%);
   display: block;
@@ -1237,7 +1266,7 @@ body {
 
   .home-page .text-zone,
   .text-page .text-zone {
-    width: 90%;
+    width: 80%;
     min-height: 0; }
 
   .text-page .right-col {
@@ -1389,6 +1418,13 @@ body {
     position: relative;
     top: 0;
     overflow: hidden; }
+
+  .sound-cloud {
+    position: static;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 50px;
+    margin-bottom: 50px; }
 
   .container.gallery {
     position: absolute;

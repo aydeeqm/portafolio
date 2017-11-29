@@ -39,7 +39,7 @@ const Init_page = ({ name, education, bio }) => {
         <span className="blast" aria-hidden="true" style={{opacity: "1"}}>.</span>
       </h1>
       <h2>Front End Developer / Javascript / React / Redux</h2> 
-      <NavLink className="flat-button" to={"/contact"}>CONTACT ME</NavLink>
+      <NavLink className="flat-button" to={"/contact"}>CONTÁCTAME</NavLink>
       </div>
       <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt; </span>
       </div>

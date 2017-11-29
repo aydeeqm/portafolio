@@ -4,8 +4,9 @@
 @import '_skills.scss';
 @import '_project.scss';
 @import '_contact.scss';
-
-
+/* *{
+    outline: 1px red solid;
+} */
 body {
     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%);
     display: block;
@@ -133,7 +134,7 @@ body {
     }
     .home-page .text-zone,
     .text-page .text-zone {
-        width: 90%;
+        width: 80%;
         min-height: 0
     }
     .text-page .right-col {
@@ -293,6 +294,14 @@ body {
         position: relative;
         top: 0;
         overflow: hidden
+    }
+
+    .sound-cloud {
+        position: static;
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 50px;
+        margin-bottom: 50px;
     }
 
     .container.gallery {

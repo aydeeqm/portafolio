@@ -14,7 +14,7 @@
 
 .container.contact .text-zone h1 {
     font-size: 53px;
-    font-family: fantasy;
+    font-family: 'Audiowide', cursive;
     color: #08fdd8;
     font-weight: normal;
     margin-top: 0;
@@ -49,11 +49,11 @@
 }
 
 .container.contact .text-zone p {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 20px;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
 }
 
 .contact-form {
@@ -263,7 +263,7 @@ input:focus:-ms-input-placeholder {
     .frase{
         text-align: center; 
        p{
-           color:tomato;
+           color:rgb(255, 221, 71);
            font-size: 40px;
            font-family: 'Lobster', cursive;
        } 
