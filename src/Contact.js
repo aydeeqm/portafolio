@@ -26,17 +26,49 @@ const Last_page = () => {
                             <span className="blast" aria-hidden="true" style={{opacity: 1}}>e</span>
                         </h1>
                         <p>Si tiene alguna pregunta, no dude en ponerse en contacto...</p>
-                        <h2>Aydee Quispe</h2>
-                        <h2>aydee.qm@gmail.com</h2>
-                        <h2>979039472</h2>
-                        <a href="#" className="button_download"><i className="fa fa-download" aria-hidden="true"></i> Download Resume</a>
+                        <div className="contact-form">
+                            <form id="contact" autocomplete="off">
+                                <ul>
+                                <li className="half animated fadeInUp">
+                                    <input className="input__field input__field--hoshi" placeholder="Name" type="text" name="name"/>
+                                    <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                <li className="half animated fadeInUp"> 
+                                <input className="input__field input__field--hoshi" placeholder="Email" type="email" name="email"/> 
+                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                <li className="animated fadeInUp"> 
+                                <input className="input__field input__field--hoshi" placeholder="Subject" type="text" name="subject" /> 
+                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                <li className="animated fadeInUp">
+                                <textarea className="input__field input__field--hoshi" placeholder="Message" name="msg"></textarea>
+                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                <li className="submit animated fadeInUp"> 
+                                <input id="submit" type="submit" className="flat-button" value="SEND" /></li>
+                                </ul>
+                            </form>
+                        </div>
+                    <div class="uk-text-center">
+                        <a target="_blank" href="https://github.com/AydeeQM" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" class="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin"></a>
+                        <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
+                        <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" class="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp"></a>
+                        <a target="_blank" href="#" title="Resume" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
+                    </div>
+                    {/* <a href="#" className="button_download"><i className="fa fa-download" aria-hidden="true"></i>Resume</a> */}
+                    </div>
+                    <div className="map-wrap">
+                        <div id="map">
+                            <div className="frase">
+                                <p>“Vivo cada día de mi vida </p><p>
+                                </p><p>como si fuera el último, </p>
+                                <p> y aprendo </p><p>
+                                </p><p>como si fuese a vivir</p>
+                                <p>para siempre”.</p><p>
+                                </p>
+                            </div>
+                            {/* <img src={mirada} style={{width:"61%"}} className="img-responsive"/> */}
+                        </div>
                     </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
-            </div>
-            <div className="map-wrap">
-                <div id="map">
-                {/* <img src={mirada} style={{width:"61%"}} className="img-responsive"/> */}
-                </div>
             </div>
         </div>
     )
@@ -52,7 +84,7 @@ const Contact = ({ mydata }) => {
     return (
         <div>
             <Header />
-            <section >
+            <section>
                 {lastComponent}
             </section>
         </div>

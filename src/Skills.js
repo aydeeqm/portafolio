@@ -28,31 +28,31 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                         </div>
                         <div class="container-fluid wrap">
                             <div className="col-lg-12 col-md-12 col-ms-12">
-                                <div class="progress-radial progress-85 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-85 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-html5-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-70 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-javascript-plain colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-80 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-80 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-css3-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-65 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-65 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-react-original-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-75 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-75 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-jquery-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-85 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-85 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-70 col-lg-3 col-sm-3 col-md-3 col-xs-3">
                                     <div class="overlay"><i class="devicon-sass-original colored"></i></div>
                                 </div>
 

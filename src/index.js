@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/body.css';
 import Home from './Home';
 import About from './About';
 import Skills from './Skills';

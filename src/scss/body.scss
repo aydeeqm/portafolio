@@ -9,13 +9,32 @@
 body {
     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%);
     display: block;
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #444;
     user-select: none;
     overflow: auto;
 }
+
+#vide{
+   background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%) !important;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .container.contact .text-zone h1:before,
 .container.skills .text-zone h1:before,
 .container.about .text-zone h1:before {
@@ -30,11 +49,29 @@ body {
 
 .container.about .text-zone,
 .container.skills .text-zone {
-    width: 39%;
+    width: 35%;
     min-height: 0
 }
 
 /* ********************RESPONSIVE***************************** */
+@media (min-width: 1200px){
+    .container {
+    max-width: 100%;}
+}
+@media (min-width: 992px){
+    .container {
+    max-width: 100%;}
+}
+@media (min-width: 768px){
+    .container {
+    max-width: 100%;}
+}
+
+@media (min-width: 576px){
+    .container {
+    max-width: 100%;}
+}
+
 
 @media(min-width:1100px) and (min-height:900px) {
     h1 {
@@ -122,7 +159,6 @@ body {
 @media(max-width:800px) and (orientation :landscape) {
     #rotate {
         position: fixed;
-        /* background: #212121 url(//jacekjeznach.com/wp-content/themes/jj/css/../img/rotate.jpg) no-repeat center; */
         background-size: 100% auto;
         top: 0;
         left: 0;
@@ -132,9 +168,6 @@ body {
         display: block !important;
         opacity: 1 !important
     }
-/*     #page {
-        display: none !important
-    } */
 }
 
 @media(max-width:960px) {
@@ -192,13 +225,14 @@ body {
         float: left;
         width: auto;
         margin-top: 0;
-        line-height: 60px
+        line-height: 60px;
+        a {
+            margin-top: 0;
+            display: inline;
+            margin-right: 7px;
+        }
     }
-    .lang a {
-        margin-top: 0;
-        display: inline;
-        margin-right: 7px;
-    }
+
     #nav_bar nav {
         width: 42%;
         position: absolute;
@@ -215,7 +249,7 @@ body {
         float: left;
         margin-left: 14%;
         line-height: 60px;
-        height: 60pxs
+        height: 60px;
     }
     #nav_bar nav a:first-child {
         margin-left: 0
@@ -260,11 +294,7 @@ body {
         top: 0;
         overflow: hidden
     }
-    .bg {
-        right: 0;
-        left: 0;
-        opacity: .5
-    }
+
     .container.gallery {
         position: absolute;
         min-height: 1200px
@@ -305,12 +335,13 @@ body {
 
     .section-skills {
         width: 100%;
-        padding: 0 10%;
+        padding: 0 5%;
     }
 
-    .solar-system {
-        display: none
+    .portafolio-content{
+        margin-top: 80px;
     }
+
     #myCanvasContainer {
         position: relative;
         margin: 0 10% !important;
@@ -342,10 +373,12 @@ body {
         height: 320px;
         clear: both
     }
-    .inf-map {
-        top: auto;
-        right: 5%;
-        bottom: 50px
+    #map {
+        .frase {
+            p {
+                font-size: 25px;
+            }
+        }
     }
 }
 

@@ -87,6 +87,7 @@
 .skills-list {
     padding-left: 0;
     margin-left: 35px;
+    margin-right: 55px;
 }
 
 .progress {
@@ -108,6 +109,10 @@
     font-size: 22px;
 }
 
+.skills-list {
+    list-style: none;
+}
+
 .progress-bar-9 {
     background: #e9a11c;
 }
@@ -116,24 +121,21 @@
     background: #3472e4;
 }
 
-/* jjjjjjjjjjjjjjjjjjjjjjjjjj */
+.wrap {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Progress Skills */
 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-/* @import compass; */
 
 // Colors
 $barColor: tomato;
 $overlayColor: #fffde8;
 $backColor: #2f3439;
 
-/* body
-{  padding: 30px 0;
-  background-color: $backColor;
-  font-family: 'Noto Sans', sans-serif;} */
-/* .wrap {
-    width: 600px;
-    margin: 0 auto;
-} */
 
 /* -------------------------------------
  * Bar container
@@ -141,26 +143,28 @@ $backColor: #2f3439;
 .progress-radial
 {  float: left;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  border: 2px solid $backColor; // remove gradient color
-  background-color: $barColor; }// default 100%
+  border: 2px solid $backColor;
+  background-color: $barColor;
+  margin: 10px 18px;
+}
 
 /* -------------------------------------
  * Optional centered circle w/text
  * ------------------------------------- */  
 .progress-radial .overlay{
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   background-color: $overlayColor;
   border-radius: 50%;
-  margin-left: 3px;
-  margin-top: 18px;
+  margin-left: 2px;
+  margin-top: 15px;
   text-align: center;
   line-height: 60px;
-  padding-top: 12px;
+  padding-top: 16px;
   i{
     font-size: 40px;  
   }
