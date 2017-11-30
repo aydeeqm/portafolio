@@ -2,8 +2,8 @@
   "name": "portafolio_aydee",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aydeeqm.github.io/portafolio/",
   "dependencies": {
+    "firebase": "^4.6.2",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",

@@ -24,7 +24,7 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                     <div className="section-skills">
                         <div>
                             <h2 className="section-title">_{title}</h2>
-                            <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Habilidades Tésnicas</h3>
+                            <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Habilidades Técnicas</h3>
                         </div>
                         <div class="container-fluid wrap">
                             <div className="hability ">

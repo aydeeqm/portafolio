@@ -1,16 +1,17 @@
 import store from './store';
 
 export const isHidden = () => {
-    let bolean = store.getState().showing? false : true;
-    store.setState({ showing: bolean });
-    console.log('ingreseee', bolean);
+    const bolean = store.getState().showing;
+    const newStyle = !bolean;
+    store.setState({
+        showing: newStyle,
+    });
 }
 
 export const clickit = () =>{
-    const cambio = store.getState().isHide;
-    const newStyle = cambio;
+    const bolean = store.getState().showing;
+    const newStyle = !bolean;
     store.setState({
-        isHide: newStyle,
+        showing: newStyle,
     });
-    console.log('iconossss', newStyle);
 }
