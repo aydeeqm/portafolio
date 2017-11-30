@@ -23,40 +23,40 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                 <div className="skills-charts">
                     <div className="section-skills">
                         <div>
-                            <h2 className="section-title">{title}</h2>
-                            <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+                            <h2 className="section-title">_{title}</h2>
+                            <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Habilidades Tésnicas</h3>
                         </div>
                         <div class="container-fluid wrap">
-                            <div className="col-lg-12 col-md-12 col-ms-12">
-                                <div class="progress-radial progress-85 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                            <div className="hability ">
+                                <div class="progress-radial progress-85">
                                     <div class="overlay"><i class="devicon-html5-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-70">
                                     <div class="overlay"><i class="devicon-javascript-plain colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-80 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-80">
                                     <div class="overlay"><i class="devicon-css3-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-65 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-65">
                                     <div class="overlay"><i class="devicon-react-original-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-75 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-75">
                                     <div class="overlay"><i class="devicon-jquery-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-85 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-85">
                                     <div class="overlay"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70 col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                                <div class="progress-radial progress-70">
                                     <div class="overlay"><i class="devicon-sass-original colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70 col-lg-3 col-sm-6 col-md-4 col-xs-6">
+                                <div class="progress-radial progress-70">
                                     <div class="overlay"><i class="devicon-git-plain-wordmark colored"></i></div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                         <ul className="skills-list">
                             <li>
                                 <div className="progress">
-                                    <div className="progress-bar-9" data-percent="60%" role="progressbar" style={{ width: "60%" }}>
+                                    <div className="progress-bar-9" data-percent="75%" role="progressbar" style={{ width: "75%" }}>
                                         <span className="sr-only">60% Complete</span>
                                     </div>
                                     <span className="progress-type"><i className="devicon-illustrator-plain"></i> Illustrator</span>

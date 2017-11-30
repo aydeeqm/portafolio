@@ -17,6 +17,10 @@ body {
     user-select: none;
     overflow: auto;
 }
+@font-face {
+    font-family: "terminus";
+    src: url("../fonts/TerminusTTF-4.46.0.ttf");
+}
 
 #vide{
    background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%) !important;
@@ -388,6 +392,13 @@ body {
                 font-size: 25px;
             }
         }
+    }
+
+    #mySidenav a {
+        left: -117px;
+        padding: 15px 15px 5px 25px;
+        width: 135px;
+        font-size: 12px;
     }
 }
 

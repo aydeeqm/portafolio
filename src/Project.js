@@ -13,10 +13,11 @@ const Mypro = () => {
                 <li>
                     <div class="ch-item onlyimg ch-img-1">
                         <div class="ch-info">
-                            <h3>Trello Phoenix</h3>
+                            <h3>Trello</h3>
+                            <p>Plataforma para gestión de proyectos</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Trello-redux" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
                                     <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Trello-redux/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
@@ -29,7 +30,7 @@ const Mypro = () => {
                             <h3>Timer Score</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/TIMER-SCORED" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
                                     <a className="icon venobox vbox-item" href="https://https://aydeeqm.github.io/TIMER-SCORED/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
@@ -42,7 +43,7 @@ const Mypro = () => {
                             <h3>Register</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/MVC-REGISTER" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
                                     <a className="icon venobox vbox-item" href="https://https://aydeeqm.github.io/MVC-REGISTER/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
@@ -55,8 +56,8 @@ const Mypro = () => {
                             <h3>Memory Game</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Juego_memoria/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/QUIZ-ABC/tree/master/assets" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/QUIZ-ABC/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -68,7 +69,7 @@ const Mypro = () => {
                             <h3>Start Studio</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto/tree/master/asset" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
                                     <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/start-studio/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
@@ -78,11 +79,11 @@ const Mypro = () => {
                 <li>
                     <div class="ch-item onlyimg ch-img-6">
                         <div class="ch-info">
-                            <h3>Brainiac</h3>
+                            <h3>Laberinto</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/juego-laberinto/" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -91,10 +92,10 @@ const Mypro = () => {
                 <li>
                     <div class="ch-item onlyimg ch-img-7">
                         <div class="ch-info">
-                            <h3>Brainiac</h3>
+                            <h3>Routing</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Routing-V2" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
                                     <a className="icon venobox vbox-item" href="#" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
@@ -104,7 +105,7 @@ const Mypro = () => {
                 <li>
                     <div class="ch-item onlyimg ch-img-8">
                         <div class="ch-info">
-                            <h3>Brainiac</h3>
+                            <h3>Foro</h3>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -125,10 +126,10 @@ const Colaborativos = () => {
                     <section class="main">
                         <ul class="ch-grid">
                             <li>
-                                <div class="ch-item ch-img-1">
+                            <div class="ch-item onlyimg ch-img-9">
                                     <div class="ch-info">
-                                        <h3>Brainiac</h3>
-                                        <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
+                                        <h3>Sushi</h3>
+                                        <p>Tienda <a href="#"> online</a> para ordenar sushi</p>
                                         <figcaption >
                                             <div className="classless">
                                             <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -139,10 +140,10 @@ const Colaborativos = () => {
                                 </div>
                             </li>
                         <li>
-                            <div class="ch-item ch-img-1">
+                            <div class="ch-item onlyimg ch-img-10">
                                 <div class="ch-info">
-                                    <h3>Brainiac</h3>
-                                    <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
+                                    <h3>YANAPA</h3>
+                                    <p>Mapeo de los indices de anemia en el Perú</p>
                                     <figcaption >
                                         <div className="classless">
                                             <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -153,10 +154,10 @@ const Colaborativos = () => {
                             </div>
                         </li>
                         <li>
-                            <div class="ch-item ch-img-1">
+                            <div class="ch-item onlyimg ch-img-11">
                                 <div class="ch-info">
-                                    <h3>Brainiac</h3>
-                                    <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
+                                    <h3>Game Planet</h3>
+                                    <p>Página para consolas y la linea de video juegos</p>
                                     <figcaption >
                                         <div className="classless">
                                             <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -167,10 +168,10 @@ const Colaborativos = () => {
                             </div>
                         </li>
                         <li>
-                            <div class="ch-item ch-img-1">
+                            <div class="ch-item onlyimg ch-img-12">
                                 <div class="ch-info">
-                                    <h3>Brainiac</h3>
-                                    <p>by Daniel Nyari <a href="http://drbl.in/eODP">View on Dribbble</a></p>
+                                    <h3>Lyft</h3>
+                                    <p>Plataforma de pedir servicio de taxi con geolocalización</p>
                                     <figcaption >
                                         <div className="classless">
                                             <div className="icon"><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>

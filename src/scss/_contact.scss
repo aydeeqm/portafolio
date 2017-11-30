@@ -49,11 +49,11 @@
 }
 
 .container.contact .text-zone p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'terminus';
+    letter-spacing: 0.5px;
 }
 
 .contact-form {
@@ -98,7 +98,8 @@
     border: 0;
     background: #37393b;
     height: 30px;
-    font-size: 14px;
+    font-family: 'terminus';
+    font-size: 16px;
     color: #8d8d8d;
     padding: 0 20px;
     box-sizing: border-box
@@ -109,18 +110,19 @@
     border: 0;
     background: #37393b;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "terminus";
     color: #8d8d8d;
     padding: 20px;
     box-sizing: border-box;
-    min-height: 60px
+    min-height: 65px
 }
 
 .contact-form .flat-button {
     color: #08fdd8;
     font-size: 11px;
     letter-spacing: 3px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "terminus";
     text-decoration: none;
     padding: 8px 10px;
     border: 1px solid #08fdd8;
@@ -228,9 +230,18 @@ input:focus:-ms-input-placeholder {
     border-radius: 10px;
 }
 
+.contactos{
+    padding: 20px 5px;
+    a{
+        background: rgb(68, 80, 80);
+        color: #fff;
+    }
+}
+
 .fa-download:before {
     content: "\f019";
 }
+
 .button_download {
     display: block;
     background: #2DAEE0;
@@ -250,6 +261,7 @@ input:focus:-ms-input-placeholder {
     width: 48%;
     height: 100%;
     margin-top: 0%;
+    border-radius: 100% 0;
 }
 
 #map {
@@ -263,8 +275,8 @@ input:focus:-ms-input-placeholder {
     .frase{
         text-align: center; 
        p{
-           color:rgb(255, 221, 71);
-           font-size: 40px;
+           color:rgb(255, 255, 255);
+           font-size: 25px;
            font-family: 'Lobster', cursive;
        } 
     }

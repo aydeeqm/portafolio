@@ -30,30 +30,29 @@ const Last_page = () => {
                             <form id="contact" autocomplete="off">
                                 <ul>
                                 <li className="half animated fadeInUp">
-                                    <input className="input__field input__field--hoshi" placeholder="Name" type="text" name="name"/>
+                                    <input className="input__field input__field--hoshi" placeholder="Nombre" type="text" name="name"/>
                                     <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
                                 <li className="half animated fadeInUp"> 
-                                <input className="input__field input__field--hoshi" placeholder="Email" type="email" name="email"/> 
+                                <input className="input__field input__field--hoshi" placeholder="Correo" type="email" name="email"/> 
                                 <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
                                 <li className="animated fadeInUp"> 
-                                <input className="input__field input__field--hoshi" placeholder="Subject" type="text" name="subject" /> 
+                                <input className="input__field input__field--hoshi" placeholder="Asunto" type="text" name="subject" /> 
                                 <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
                                 <li className="animated fadeInUp">
                                 <textarea className="input__field input__field--hoshi" placeholder="Message" name="msg"></textarea>
                                 <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
                                 <li className="submit animated fadeInUp"> 
-                                <input id="submit" type="submit" className="flat-button" value="SEND" /></li>
+                                <input id="submit" type="submit" className="flat-button" value="ENVIAR" /></li>
                                 </ul>
                             </form>
                         </div>
-                    <div class="uk-text-center">
+                    <div class="uk-text-center contactos">
                         <a target="_blank" href="https://github.com/AydeeQM" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
                         <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" class="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin"></a>
                         <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
                         <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" class="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp"></a>
-                        <a target="_blank" href="#" title="Resume" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
+                        <a target="_blank" href="aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
                     </div>
-                    {/* <a href="#" className="button_download"><i className="fa fa-download" aria-hidden="true"></i>Resume</a> */}
                     </div>
                     <div className="map-wrap">
                         <div id="map">

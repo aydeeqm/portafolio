@@ -18,23 +18,25 @@ const Second_page = ({bio}) => {
                     <h1 aria-label=" About me" className="blast-root">
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>Acerca&nbsp;</span>
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>de&nbsp;</span>
-                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>mi</span>
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>mí</span>
                     </h1>
                     <p aria-label="Hola." className="blast-root">
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
                     </p>
                 </div>
                 <div className="sound-cloud">
-                    <h2 className="section-title">{'< Disitinción de Laboratoria >'}</h2>
-                    <span>
-                        <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
-                        </span>
-                    <span>
-                        <img src={rock} />&nbsp;
-                        </span>
-                    <span>
-                        <img src={best} />&nbsp;
-                        </span>
+                    <h2 className="section-title">{'_Disitinción de Laboratoria.'}</h2>
+                    <div className="distinciones">
+                        <div className="top">
+                            <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
+                        </div>
+                        <div className="rock">
+                            <img src={rock} />&nbsp;
+                        </div>
+                        <div className="best">
+                            <img src={best} />&nbsp;
+                        </div>
+                    </div>
                 </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
             </div>
