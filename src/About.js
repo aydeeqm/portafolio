@@ -9,7 +9,7 @@ import fondo from './img/fondoabout.jpg';
 import { connect } from 'redux-zero/react';
 import './css/body.css';
 
-const Second_page = ({bio}) => {
+const Second_page = ({bio1, bio2, bio3}) => {
     return (
         <div id="page" className="en">
             <div className="container about" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
@@ -21,7 +21,13 @@ const Second_page = ({bio}) => {
                         <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>mí</span>
                     </h1>
                     <p aria-label="Hola." className="blast-root">
-                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio}</span>
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio1}</span>
+                    </p>
+                    <p aria-label="Hola." className="blast-root">
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio2}</span>
+                    </p>
+                    <p aria-label="Hola." className="blast-root">
+                        <span className="blast" aria-hidden="true" style={{ opacity: "1" }}>{bio3}</span>
                     </p>
                 </div>
                 <div className="sound-cloud">
@@ -49,7 +55,9 @@ const About = ({ mydata }) => {
       const aboutComponent = mydata.map((item, index) => {
         return <Second_page
             key={index}
-            bio={item.bio}
+            bio1={item.bio[0]}
+            bio2={item.bio[1]}
+            bio3={item.bio[2]}
             index={index}
         />
       })

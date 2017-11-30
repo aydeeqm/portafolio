@@ -14,7 +14,7 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-1">
                         <div class="ch-info">
                             <h3>Trello</h3>
-                            <p>Plataforma para gestión de proyectos</p>
+                            <p>Plataforma para gestión de proyectos con react.js y sass.</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/Trello-redux" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -28,6 +28,7 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-2">
                         <div class="ch-info">
                             <h3>Timer Score</h3>
+                            <p>Plataforma para players con score y puntuación con React.js y css.</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/TIMER-SCORED" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -41,6 +42,7 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-3">
                         <div class="ch-info">
                             <h3>Register</h3>
+                            <p>Aplicación para gestionar invitados con React.js, jxs y css.</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/MVC-REGISTER" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -53,7 +55,8 @@ const Mypro = () => {
                 <li>
                     <div class="ch-item onlyimg ch-img-4">
                         <div class="ch-info">
-                            <h3>Memory Game</h3>
+                            <h3>Trivia</h3>
+                            <p>Desarrollo de quiz con resultado con POO y jquery</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/QUIZ-ABC/tree/master/assets" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
@@ -67,6 +70,7 @@ const Mypro = () => {
                     <div class="ch-item onlyimg ch-img-5">
                         <div class="ch-info">
                             <h3>Start Studio</h3>
+                            <p>Maquetación y estilo con Htlm5 y css3</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto/tree/master/asset" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
