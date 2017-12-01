@@ -46,12 +46,12 @@ const Last_page = () => {
                                 </ul>
                             </form>
                         </div>
-                    <div class="uk-text-center contactos">
-                        <a target="_blank" href="https://github.com/AydeeQM" class="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" class="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin"></a>
-                        <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
-                        <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" class="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp"></a>
-                        <a target="_blank" href="aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
+                    <div className="uk-text-center contactos">
+                        <a target="_blank" href="https://github.com/AydeeQM" className="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" className="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin"></a>
+                        <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" className="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
+                        <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" className="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp"></a>
+                        <a target="_blank" href="aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" className="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
                     </div>
                     </div>
                     <div className="map-wrap">

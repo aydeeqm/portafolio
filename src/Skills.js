@@ -26,51 +26,51 @@ const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react
                             <h2 className="section-title">_{title}</h2>
                             <h3 className="section-item-title-2"><i className="fa fa-code"></i>&nbsp;&nbsp; Habilidades Técnicas</h3>
                         </div>
-                        <div class="container-fluid wrap">
+                        <div className="container-fluid wrap">
                             <div className="hability ">
-                                <div class="progress-radial progress-85">
-                                    <div class="overlay"><i class="devicon-html5-plain-wordmark colored"></i></div>
+                                <div className="progress-radial progress-85">
+                                    <div className="overlay"><i className="devicon-html5-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70">
-                                    <div class="overlay"><i class="devicon-javascript-plain colored"></i></div>
+                                <div className="progress-radial progress-70">
+                                    <div className="overlay"><i className="devicon-javascript-plain colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-80">
-                                    <div class="overlay"><i class="devicon-css3-plain-wordmark colored"></i></div>
+                                <div className="progress-radial progress-80">
+                                    <div className="overlay"><i className="devicon-css3-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-65">
-                                    <div class="overlay"><i class="devicon-react-original-wordmark colored"></i></div>
+                                <div className="progress-radial progress-65">
+                                    <div className="overlay"><i className="devicon-react-original-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-75">
-                                    <div class="overlay"><i class="devicon-jquery-plain-wordmark colored"></i></div>
+                                <div className="progress-radial progress-75">
+                                    <div className="overlay"><i className="devicon-jquery-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-85">
-                                    <div class="overlay"><i class="devicon-bootstrap-plain-wordmark colored"></i></div>
+                                <div className="progress-radial progress-85">
+                                    <div className="overlay"><i className="devicon-bootstrap-plain-wordmark colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70">
-                                    <div class="overlay"><i class="devicon-sass-original colored"></i></div>
+                                <div className="progress-radial progress-70">
+                                    <div className="overlay"><i className="devicon-sass-original colored"></i></div>
                                 </div>
 
-                                <div class="progress-radial progress-70">
-                                    <div class="overlay"><i class="devicon-git-plain-wordmark colored"></i></div>
+                                <div className="progress-radial progress-70">
+                                    <div className="overlay"><i className="devicon-git-plain-wordmark colored"></i></div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <h3 className="section-item-title-2"><i class="fa fa-delicious" aria-hidden="true"></i>&nbsp;&nbsp; Desing Skills</h3>
+                            <h3 className="section-item-title-2"><i className="fa fa-delicious" aria-hidden="true"></i>&nbsp;&nbsp; Desing Skills</h3>
                         </div>
                         <div className="hability ">
-                            <div class="progress-radial progress-55">
-                                <div class="overlay"><i class="devicon-photoshop-plain colored"></i></div>
+                            <div className="progress-radial progress-55">
+                                <div className="overlay"><i className="devicon-photoshop-plain colored"></i></div>
                             </div>
 
-                            <div class="progress-radial progress-65">
-                                <div class="overlay"><i class="devicon-illustrator-plain colored"></i></div>
+                            <div className="progress-radial progress-65">
+                                <div className="overlay"><i className="devicon-illustrator-plain colored"></i></div>
                             </div>
                         </div>
                     </div>
