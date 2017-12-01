@@ -161,6 +161,19 @@ body {
     } */
 }
 
+@media(max-width:800px) and (orientation :landscape) {
+    #rotate {
+        position: fixed;
+        background-size: 100% auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999999999;
+        display: block !important;
+        opacity: 1 !important
+    }
+}
 
 @media(max-width:960px) {
     #world {
@@ -169,10 +182,10 @@ body {
         height: auto !important;
         margin: auto
     }
-/*     #page {
+    #page {
         height: auto;
         position: relative
-    } */
+    }
     .skills-charts {
         position: relative;
         left: 0;
@@ -282,7 +295,7 @@ body {
         margin: 0;
         padding-bottom: 58px;
         box-sizing: border-box;
-        /* position: relative; */
+        position: relative;
         top: 0;
         overflow: hidden
     }
@@ -291,7 +304,7 @@ body {
         position: static;
         width: 80%;
         margin-left: 10%;
-        padding-top: 50px;
+        padding-top: 20px;
         margin-bottom: 50px;
     }
 
@@ -309,7 +322,7 @@ body {
     }
     .top-tags {
         bottom: auto;
-        top: 76px
+        top: 95px
     }
     .bottom-tags {
         position: absolute;
@@ -325,7 +338,7 @@ body {
         float: left;
         margin-left: 10%;
         transform: none !important;
-        margin-top: 170px
+        margin-top: 190px
     }
     .container.about .text-zone,
     .container.skills .text-zone {
@@ -387,6 +400,14 @@ body {
         width: 135px;
         font-size: 12px;
     }
+    .gallery{
+        span{
+            display: none;
+        }
+    }
+    .sound-cloud .section-title {
+        font-size: 32px;
+    }
 }
 
 @media(max-width:750px) {
@@ -395,7 +416,7 @@ body {
     }
     h1 {
         font-size: 47px !important;
-        line-height: 50px !important
+        line-height: 48px !important
     }
     .chart.small {
         display: none
@@ -496,6 +517,9 @@ body {
     .preloader .inner {
         top: 20px
     }
+    .progress-radial {
+        margin: 10px 15px;
+    }
 }
 
 @media(max-width:440px) {
@@ -503,11 +527,39 @@ body {
         width: 100%;
         margin-bottom: 30px
     }
+    .container.about .text-zone h1,
+    .container.skills .text-zone h1,
+    .container.contact .text-zone h1 {
+        font-size: 45px !important;
+    }
+    .progress-radial {
+        margin: 10px 8px;
+    }
 }
 
-@media(max-width:390px) {
+@media(max-width:395px) {
     .home-page .text-zone h1 {
         font-size: 12vw !important;
         line-height: 45px !important;
+    }
+    .container.about .text-zone h1,
+    .container.skills .text-zone h1,
+    .container.contact .text-zone h1 {
+        font-size: 35px !important;
+    }
+    .progress-radial {
+        width: 90px;
+        height: 90px;
+        margin: 10px 5px;
+    }
+    .progress-radial .overlay {
+        width: 65px;
+        height: 65px;
+        margin-left: 9px;
+        margin-top: 9px;
+        padding-top: 10px;
+    }
+    .progress-radial .overlay i {
+        font-size: 40px;
     }
 }

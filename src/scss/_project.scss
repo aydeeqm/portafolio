@@ -63,17 +63,17 @@
 }
 
 .main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 .ch-grid {
-    margin: 60px 0 0 20px;
-    padding: 0;
+    margin: 60px 0 0 0;
     list-style: none;
     display: block;
     text-align: center;
     width: 100%;
+    padding-left: 7%;
 }
 .ch-grid li {
     width: 255px;
@@ -157,8 +157,8 @@
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin: 0 30px;
-	padding: 50px 0 0 0;
-	height: 100px;
+	padding: 30px 0 0 0;
+	height: 70px;
     font-family: 'terminus';
 	text-shadow: 
 		0 0 1px #fff, 
@@ -284,6 +284,7 @@
     font-size: 12px;
     color: white;
     border-radius: 0 5px 5px 0;
+    z-index: 10;
 }
 
 #mySidenav a:hover {
