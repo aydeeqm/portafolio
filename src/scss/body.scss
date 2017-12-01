@@ -161,19 +161,6 @@ body {
     } */
 }
 
-@media(max-width:800px) and (orientation :landscape) {
-    #rotate {
-        position: fixed;
-        background-size: 100% auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 9999999999999;
-        display: block !important;
-        opacity: 1 !important
-    }
-}
 
 @media(max-width:960px) {
     #world {
@@ -182,10 +169,10 @@ body {
         height: auto !important;
         margin: auto
     }
-    #page {
+/*     #page {
         height: auto;
         position: relative
-    }
+    } */
     .skills-charts {
         position: relative;
         left: 0;
@@ -295,7 +282,7 @@ body {
         margin: 0;
         padding-bottom: 58px;
         box-sizing: border-box;
-        position: relative;
+        /* position: relative; */
         top: 0;
         overflow: hidden
     }
@@ -408,7 +395,7 @@ body {
     }
     h1 {
         font-size: 47px !important;
-        line-height: 40px !important
+        line-height: 50px !important
     }
     .chart.small {
         display: none

@@ -714,7 +714,7 @@ img {
   position: relative; }
 
 .ch-grid {
-  margin: 20px 0 0 0;
+  margin: 60px 0 0 20px;
   padding: 0;
   list-style: none;
   display: block;
@@ -722,15 +722,15 @@ img {
   width: 100%; }
 
 .ch-grid li {
-  width: 220px;
-  height: 220px;
+  width: 255px;
+  height: 180px;
   display: inline-block;
-  margin: 20px; }
+  margin: 15px; }
 
 .ch-item {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 15%;
   position: relative;
   cursor: default;
   box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 10px rgba(16, 61, 54, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1288,17 +1288,6 @@ body {
   /*     .text-zone {
           margin-top: 150px !important
       } */ }
-@media (max-width: 800px) and (orientation: landscape) {
-  #rotate {
-    position: fixed;
-    background-size: 100% auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999999999;
-    display: block !important;
-    opacity: 1 !important; } }
 @media (max-width: 960px) {
   #world {
     position: relative !important;
@@ -1306,10 +1295,10 @@ body {
     height: auto !important;
     margin: auto; }
 
-  #page {
-    height: auto;
-    position: relative; }
-
+  /*     #page {
+          height: auto;
+          position: relative
+      } */
   .skills-charts {
     position: relative;
     left: 0;
@@ -1416,7 +1405,7 @@ body {
     margin: 0;
     padding-bottom: 58px;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
     top: 0;
     overflow: hidden; }
 
@@ -1516,7 +1505,7 @@ body {
 
   h1 {
     font-size: 47px !important;
-    line-height: 40px !important; }
+    line-height: 50px !important; }
 
   .chart.small {
     display: none; } }
