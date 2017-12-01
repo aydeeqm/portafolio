@@ -32,7 +32,7 @@ const Mypro = () => {
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/TIMER-SCORED" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://https://aydeeqm.github.io/TIMER-SCORED/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/TIMER-SCORED/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -46,7 +46,7 @@ const Mypro = () => {
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/MVC-REGISTER" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://https://aydeeqm.github.io/MVC-REGISTER/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/MVC-REGISTER/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -100,7 +100,7 @@ const Mypro = () => {
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/Routing-V2" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Routing-V2/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -112,8 +112,8 @@ const Mypro = () => {
                             <h3>Foro</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="#" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Foro-Redux" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Foro-Redux/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
