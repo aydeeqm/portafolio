@@ -34,16 +34,16 @@
         padding-left: 5px;
         &:before {
             content: '<h1>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #515152;
+            font-family: $font-etiqueta;
+            color: $color-etiqueta;
             font-size: 18px;
             position: absolute;
             margin-top: -45px
         }
         &:after {
             content: '<h1/>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #515152;
+            font-family: $font-etiqueta;
+            color: $color-etiqueta;
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
@@ -105,11 +105,6 @@ img {
     border-style: none;
 }
 
-.animation-logo {
-    animation: animation2 1000ms linear both;
-    opacity: 1 !important
-}
-
 .home-page .blast {
     opacity: 0;
     display: inline-block;
@@ -126,40 +121,16 @@ img {
 
 .text-page h1 .blast {
     opacity: 0;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
 
-.bg {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
-    .jb {
-        position: absolute;
-        top: auto;
-        right: auto;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        opacity: 0
-    }
-}
-
 .tags {
-    color: #515152;
+    color: $color-etiqueta;;
     position: absolute;
     bottom: 0;
     left: 80px;
     font-size: 18px;
-    font-family: 'La Belle Aurore', cursive
+    font-family: $font-etiqueta;
 }
 
 .top-tags {
@@ -202,7 +173,6 @@ img {
         width: 100%
     }
 }
-
 
 /* Cursor effect */
 

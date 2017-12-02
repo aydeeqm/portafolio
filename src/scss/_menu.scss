@@ -1,16 +1,6 @@
 /* ==========================================================
 ! 0. SECTION: MENU
 ========================================================== */
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-}
-
-$colorblue:#08fdd8;
-$colorblack: #091624;
-
 #nav_bar {
     background: $colorblue;
     width: 65px;
@@ -19,7 +9,15 @@ $colorblack: #091624;
     top: 0;
     z-index: 3;
     min-height: 500px;
-    
+    .logo {
+        display: block;
+        img {
+            display: block;
+            margin: 8px auto;
+            width: 100%;
+            height: auto
+        }
+    } 
     nav {
         display: block;
         text-align: center;
@@ -35,7 +33,10 @@ $colorblack: #091624;
             line-height: 51px;
             height: 51px;
             position: relative;
-            text-decoration: none
+            text-decoration: none;
+            i {
+                transition: all .3s ease-out
+            }
         }
 
         a.active{
@@ -43,6 +44,9 @@ $colorblack: #091624;
         }
         a:hover {
             color: $colorblack;
+            i {
+                opacity: 0;
+            }
         }
 
         a:after {
@@ -57,6 +61,7 @@ $colorblack: #091624;
             opacity: 0;
             transition: all .3s ease-out
         }
+
     }
 
     ul {
@@ -87,14 +92,12 @@ $colorblack: #091624;
            }
         }
     }
-}
-
-#nav_bar nav a i {
-    transition: all .3s ease-out
-}
-
-#nav_bar nav a:hover i {
-    opacity: 0;
+    #mobile-link {
+        display: none;
+        &:hover {
+            color: $colorblack;
+        }
+    }
 }
 
 @mixin condicional($color){
@@ -151,7 +154,6 @@ $colorblack: #091624;
 
 [class^="icon-"],
 [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -159,7 +161,6 @@ $colorblack: #091624;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -183,23 +184,3 @@ $colorblack: #091624;
 .icon-prof:before {
     content: "\f2c0";
 }
-
-#mobile-link {
-    display: none
-}
-
-#mobile-link:hover {
-    color: #091624;
-}
-
-.logo {
-    display: block;
-}
-
-.logo img {
-    display: block;
-    margin: 8px auto;
-    width: 100%;
-    height: auto
-}
-/* --------------------------------------Responsive-------------------------------------------- */

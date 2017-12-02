@@ -1,13 +1,10 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import Header from './Header';
-import { mydata } from './Data';
 import { connect } from 'redux-zero/react';
-import mirada from './img/mirada.jpg';
 import './css/body.css';
 
 
-const Last_page = () => {
+const LastPage = () => {
     return (
         <div id="page" className="en">
             <div className="container contact" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
@@ -27,7 +24,7 @@ const Last_page = () => {
                         </h1>
                         <p>Si tiene alguna pregunta, no dude en ponerse en contacto...</p>
                         <div className="contact-form">
-                            <form id="contact" autocomplete="off">
+                            <form id="contact">
                                 <ul>
                                 <li className="half animated fadeInUp">
                                     <input className="input__field input__field--hoshi" placeholder="Nombre" type="text" name="name"/>
@@ -47,11 +44,11 @@ const Last_page = () => {
                             </form>
                         </div>
                     <div className="uk-text-center contactos">
-                        <a target="_blank" href="https://github.com/AydeeQM" className="uk-icon-button uk-margin-small-right" uk-icon="icon: github"></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" className="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin"></a>
-                        <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" className="uk-icon-button uk-margin-small-right" uk-icon="icon: mail"></a>
-                        <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" className="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp"></a>
-                        <a target="_blank" href="aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" className="uk-icon-button uk-margin-small-right" uk-icon="icon: download"></a>
+                        <a target="_blank" href="https://github.com/AydeeQM" className="uk-icon-button uk-margin-small-right" uk-icon="icon: github" rel='noopener noreferrer' ></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" className="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin" rel='noopener noreferrer' ></a>
+                        <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" className="uk-icon-button uk-margin-small-right" uk-icon="icon: mail" rel='noopener noreferrer' ></a>
+                        <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" className="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp" rel='noopener noreferrer' ></a>
+                        <a target="_blank" href="cv-aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" className="uk-icon-button uk-margin-small-right" uk-icon="icon: download" rel='noopener noreferrer' ></a>
                     </div>
                     </div>
                     <div className="map-wrap">
@@ -75,7 +72,7 @@ const Last_page = () => {
 
 const Contact = ({ mydata }) => {
     const lastComponent = mydata.map((item, index) => {
-        return <Last_page
+        return <LastPage
             key={index}
             index={index}
         />

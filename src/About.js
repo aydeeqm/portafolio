@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import Header from './Header';
-import {mydata} from './Data';
 import top from './img/5mejores.png'
 import best from './img/best_squada.png';
 import rock from './img/ROCKING.png';
-import fondo from './img/fondoabout.jpg';
 import { connect } from 'redux-zero/react';
 import './css/body.css';
 
-const Second_page = ({bio1, bio2, bio3}) => {
+const SecondPage = ({bio1, bio2, bio3}) => {
     return (
         <div id="page" className="en">
             <div className="container about" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
@@ -34,13 +31,13 @@ const Second_page = ({bio1, bio2, bio3}) => {
                     <h2 className="section-title">{'_Disitinción de Laboratoria.'}</h2>
                     <div className="distinciones">
                         <div className="top">
-                            <img src={top} style={{ width: "80px", height: "75px" }} />&nbsp;
+                            <img src={top} style={{ width: "80px", height: "75px" }} alt="top" />&nbsp;
                         </div>
                         <div className="rock">
-                            <img src={rock} />&nbsp;
+                            <img src={rock} alt="rock"/>&nbsp;
                         </div>
                         <div className="best">
-                            <img src={best} />&nbsp;
+                            <img src={best} alt="best squad" />&nbsp;
                         </div>
                     </div>
                 </div>
@@ -53,7 +50,7 @@ const Second_page = ({bio1, bio2, bio3}) => {
 
 const About = ({ mydata }) => {  
       const aboutComponent = mydata.map((item, index) => {
-        return <Second_page
+        return <SecondPage
             key={index}
             bio1={item.bio[0]}
             bio2={item.bio[1]}

@@ -31,8 +31,8 @@
 
 .container.skills .text-zone h1:before {
     content: '<h1>';
-    font-family: 'La Belle Aurore', cursive;
-    color: #515152;
+    font-family: $font-etiqueta;
+    color: $color-etiqueta;
     font-size: 18px;
     position: absolute;
     margin-top: -35px
@@ -40,8 +40,8 @@
 
 .container.skills .text-zone h1:after {
     content: '<h1/>';
-    font-family: 'La Belle Aurore', cursive;
-    color: #515152;
+    font-family: $font-etiqueta;
+    color: $color-etiqueta;
     font-size: 18px;
     position: absolute;
     left: -20px;
@@ -135,8 +135,6 @@
 $barColor: #252424;
 $overlayColor: #fffde8;
 $backColor: #646666;
-
-
 /* -------------------------------------
  * Bar container
  * ------------------------------------- */

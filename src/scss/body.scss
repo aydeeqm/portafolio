@@ -1,12 +1,18 @@
-@import '_menu.scss';
-@import '_home.scss';
-@import '_about.scss';
-@import '_skills.scss';
-@import '_project.scss';
-@import '_contact.scss';
-/* *{
-    outline: 1px red solid;
-} */
+@import '_variables';
+@import '_menu';
+@import '_home';
+@import '_about';
+@import '_skills';
+@import '_project';
+@import '_contact';
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
 body {
     background: linear-gradient(to right, rgba(9, 22, 36, 1) 0%, rgba(10, 31, 46, 1) 31%, rgba(0, 53, 59, 1) 61%, rgba(34, 87, 87, 1) 100%);
     display: block;
@@ -152,36 +158,9 @@ body {
     #pyramid {
         display: none
     }
-    .bg {
-        width: 263px;
-        height: 400px
-    }
-/*     .text-zone {
-        margin-top: 150px !important
-    } */
-}
-
-@media(max-width:800px) and (orientation :landscape) {
-    #rotate {
-        position: fixed;
-        background-size: 100% auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 9999999999999;
-        display: block !important;
-        opacity: 1 !important
-    }
 }
 
 @media(max-width:960px) {
-    #world {
-        position: relative !important;
-        width: 90% !important;
-        height: auto !important;
-        margin: auto
-    }
     #page {
         height: auto;
         position: relative
@@ -196,9 +175,7 @@ body {
         margin: auto;
         overflow: hidden
     }
-    .white .logo {
-        padding-bottom: 4px
-    }
+
     #nav_bar {
         width: 100%;
         height: 60px;
@@ -206,89 +183,73 @@ body {
         top: 0;
         left: 0;
         z-index: 3;
-        min-height: 0
-    }
-    .white #nav_bar {
-        border-right: 0;
-        border-bottom: 1px solid #f4f4f4
-    }
-    .logo {
+        min-height: 0;
+        .logo {
         float: left;
         padding: 2px 0;
-        margin-right: 20px
-    }
-    .logo img {
-        display: block;
-        margin: 0 15px;
-        width: auto;
-        height: auto
-    }
-    .logo>img:first-child {
-        height: 60px
-    }
-    .lang {
-        float: left;
-        width: auto;
-        margin-top: 0;
-        line-height: 60px;
-        a {
+        margin-right: 20px;
+            img {
+                display: block;
+                margin: 0 15px;
+                width: auto;
+                height: auto
+            }
+            &>img:first-child {
+                height: 60px
+            }
+        }
+        nav {
+            width: 42%;
+            position: absolute;
+            left: 47%;
+            margin-left: -19%;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+            height: 60px;
+            top: 0;
             margin-top: 0;
-            display: inline;
-            margin-right: 7px;
+            a {
+                float: left;
+                margin-left: 14%;
+                line-height: 60px;
+                height: 60px;
+                 &:first-child {
+                    margin-left: 0
+                }
+                &.active {
+                    width: 17%;
+                }
+            }
+        }
+        ul {
+            position: static;
+            bottom: 20px;
+            width: auto;
+            height: 60px;
+            line-height: 60px;
+            display: block;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            float: right;
+            li {
+                float: right;
+                height: 60px;
+                line-height: 60px;
+                margin: 0 10px;
+                padding: 17px 0;
+                a {
+                    padding: 4px 0;
+                     &:hover {
+                        width: 25px;
+                    }
+                }
+            }
         }
     }
 
-    #nav_bar nav {
-        width: 42%;
-        position: absolute;
-        left: 47%;
-        margin-left: -19%;
-        float: left;
-        overflow: hidden;
-        text-align: center;
-        height: 60px;
-        top: 0;
-        margin-top: 0
-    }
-    #nav_bar nav a {
-        float: left;
-        margin-left: 14%;
-        line-height: 60px;
-        height: 60px;
-    }
-    #nav_bar nav a:first-child {
-        margin-left: 0
-    }
-    #nav_bar nav a.active {
-        width: 17%;
-    }
-    #nav_bar ul {
-        position: static;
-        bottom: 20px;
-        width: auto;
-        height: 60px;
-        line-height: 60px;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        float: right
-    }
-    #nav_bar ul li {
-        float: right;
-        height: 60px;
-        line-height: 60px;
-        margin: 0 10px;
-        padding: 17px 0;
-    }
-
-    #nav_bar ul li a {
-        padding: 4px 0;
-    }
-    #nav_bar ul li a:hover {
-        width: 25px;
-    }
     .container {
         max-width: 100%;
         height: auto;
@@ -297,7 +258,11 @@ body {
         box-sizing: border-box;
         position: relative;
         top: 0;
-        overflow: hidden
+        overflow: hidden;
+        &.gallery {
+            position: absolute;
+            min-height: 1200px
+        }
     }
 
     .sound-cloud {
@@ -308,10 +273,6 @@ body {
         margin-bottom: 50px;
     }
 
-    .container.gallery {
-        position: absolute;
-        min-height: 1200px
-    }
     .magicwall .magicwall-grid {
         margin-left: 0;
         margin-top: 60px
@@ -431,28 +392,53 @@ body {
 }
 
 @media(max-width:530px) {
-    .preloader .inner {
-        width: 80%
+    #nav_bar {
+        position: fixed;
+        nav {
+            width: 100%;
+            position: fixed;
+            left: 100%;
+            opacity: 0;
+            margin-left: 0;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+            height: 60px;
+            top: 60px;
+            margin-top: 0;
+            background: #63a5a2;
+            transition: all .3s ease-out;
+            a {
+                float: left;
+                margin-left: 0 !important;
+                line-height: 60px;
+                height: 60px;
+                width: 20%;
+                &.active {
+                width: 17%;
+            }
+        }
+        &.show {
+            left: 0;
+            opacity: 1
+        }
     }
-    #awwwards {
-        display: none
+
+        ul {
+            display: none
+        }
+        #mobile-link {
+            font-size: 30px;
+            color: #fff;
+            float: right;
+            margin: 10px 20px 10px 10px;
+            display: block
+        }
     }
-    #mobile-link {
-        font-size: 30px;
-        color: #fff;
-        float: right;
-        margin: 10px 20px 10px 10px;
-        display: block
-    }
-    #nav_bar ul {
-        display: none
-    }
+
     .home-page .text-zone {
         width: 85%;
         left: 5%
-    }
-    #nav_bar nav a.active {
-        width: 17%;
     }
 
     body {
@@ -478,38 +464,7 @@ body {
         position: relative;
         top: -10px
     }
-    #nav_bar {
-        position: fixed
-    }
-    #nav_bar nav {
-        width: 100%;
-        position: fixed;
-        left: 100%;
-        opacity: 0;
-        margin-left: 0;
-        float: left;
-        overflow: hidden;
-        text-align: center;
-        height: 60px;
-        top: 60px;
-        margin-top: 0;
-        background: #63a5a2;
-        transition: all .3s ease-out
-    }
-    .white #nav_bar nav {
-        background: #fff
-    }
-    #nav_bar nav a {
-        float: left;
-        margin-left: 0 !important;
-        line-height: 60px;
-        height: 60px;
-        width: 20%
-    }
-    #nav_bar nav.show {
-        left: 0;
-        opacity: 1
-    }
+
     .contact-form ul li.half {
         width: 100%;
         margin-left: 0

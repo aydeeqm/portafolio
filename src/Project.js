@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Header from './Header';
-import { mydata } from './Data';
 import { connect } from 'redux-zero/react';
 import { Redirect, Switch, Route } from 'react-router-dom'
 import './css/body.css';
@@ -17,8 +16,8 @@ const Mypro = () => {
                             <p>Plataforma para gestión de proyectos con react.js y sass.</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/Trello-redux" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Trello-redux/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Trello-redux" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Trello-redux/" target="_blank" rel='noopener noreferrer'><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -31,8 +30,8 @@ const Mypro = () => {
                             <p>Plataforma para players con score y puntuación con React.js y css.</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/TIMER-SCORED" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/TIMER-SCORED/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/TIMER-SCORED" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/TIMER-SCORED/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -45,8 +44,8 @@ const Mypro = () => {
                             <p>Aplicación para gestionar invitados con React.js, jxs y css.</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/MVC-REGISTER" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/MVC-REGISTER/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/MVC-REGISTER" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/MVC-REGISTER/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -59,8 +58,8 @@ const Mypro = () => {
                             <p>Desarrollo de quiz con resultado con POO y jquery</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/QUIZ-ABC/tree/master/assets" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/QUIZ-ABC/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/QUIZ-ABC/tree/master/assets" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/QUIZ-ABC/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -73,8 +72,8 @@ const Mypro = () => {
                             <p>Maquetación y estilo con Htlm5 y css3</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto/tree/master/asset" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/start-studio/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto/tree/master/asset" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/start-studio/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -86,8 +85,8 @@ const Mypro = () => {
                             <h3>Laberinto</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/juego-laberinto/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/juego-laberinto/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -99,8 +98,8 @@ const Mypro = () => {
                             <h3>Routing</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/Routing-V2" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Routing-V2/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Routing-V2" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Routing-V2/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -112,8 +111,8 @@ const Mypro = () => {
                             <h3>Foro</h3>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/Foro-Redux" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Foro-Redux/" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Foro-Redux" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Foro-Redux/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
@@ -136,8 +135,8 @@ const Colaborativos = () => {
                                         <p>Tienda <a href="#"> online</a> para ordenar sushi</p>
                                         <figcaption >
                                             <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                             </div>
                                         </figcaption>
                                     </div>
@@ -150,8 +149,8 @@ const Colaborativos = () => {
                                     <p>Mapeo de los indices de anemia en el Perú</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>
@@ -164,8 +163,8 @@ const Colaborativos = () => {
                                     <p>Página para consolas y la linea de video juegos</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>
@@ -178,8 +177,8 @@ const Colaborativos = () => {
                                     <p>Plataforma de pedir servicio de taxi con geolocalización</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank"><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>

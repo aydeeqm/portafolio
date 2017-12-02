@@ -1,111 +1,100 @@
 /* ==========================================================
 ! 6. SECTION: CONTACT
 ========================================================== */
-.container.contact .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%
-}
-
-.container.contact .text-zone h1 {
-    font-size: 53px;
-    font-family: 'Audiowide', cursive;
-    color: #08fdd8;
-    font-weight: normal;
-    margin-top: 0;
-    position: relative;
-    margin-bottom: 40px
-}
-
-.container.contact .blast {
-    opacity: 0;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out
-}
-
-.container.contact .text-zone h1:before {
-    content: '<h1>';
-    font-family: 'La Belle Aurore', cursive;
-    color: #515152;
-    font-size: 18px;
-    position: absolute;
-    margin-top: -10px
-}
-
-.container.contact .text-zone h1:after {
-    content: '<h1/>';
-    font-family: 'La Belle Aurore', cursive;
-    color: #515152;
-    font-size: 18px;
-    position: absolute;
-    left: -20px;
-    bottom: -20px;
-    margin-left: 20px
-}
-
-.container.contact .text-zone p {
-    font-size: 18px;
-    line-height: 20px;
-    color: #fff;
-    font-family: 'terminus';
-    letter-spacing: 0.5px;
+.container.contact{
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        h1 {
+            font-size: 53px;
+            font-family: 'Audiowide', cursive;
+            color: #08fdd8;
+            font-weight: normal;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+             &:before {
+                content: '<h1>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                font-size: 18px;
+                position: absolute;
+                margin-top: -10px
+            }
+             &:after {
+                content: '<h1/>';
+                font-family: 'La Belle Aurore', cursive;
+                color: #515152;
+                font-size: 18px;
+                position: absolute;
+                left: -20px;
+                bottom: -20px;
+                margin-left: 20px
+            }
+        }
+        p {
+            font-size: 18px;
+            line-height: 20px;
+            color: #fff;
+            font-family: 'terminus';
+            letter-spacing: 0.5px;
+        }
+    }
+    .blast {
+        opacity: 0;
+        transition: all .3s ease-out
+    }
 }
 
 .contact-form {
-    width: 100%
-}
-
-.contact-form ul {
-    padding: 0;
-    margin: 0
-}
-
-.contact-form ul li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-bottom: 10px;
-    opacity: 0.7;
-    overflow: hidden;
-    display: block;
-    clear: both;
-    position: relative
-}
-
-.contact-form ul li.half {
-    width: 49%;
-    margin-left: 2%;
-    float: left;
-    clear: none
-}
-
-.contact-form ul li.submit {
-    overflow: hidden
-}
-
-.contact-form ul li.half:first-child {
-    margin-left: 0
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
     width: 100%;
-    border: 0;
-    background: #37393b;
-    height: 30px;
-    font-family: 'terminus';
-    font-size: 16px;
-    color: #8d8d8d;
-    padding: 0 20px;
-    box-sizing: border-box
-}
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0.7;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            &.half {
+                width: 49%;
+                margin-left: 2%;
+                float: left;
+                clear: none;
+                &:first-child {
+                    margin-left: 0
+                }
 
-.contact-form textarea {
+            }
+            &.submit {
+                overflow: hidden
+            }
+        }
+    }
+    input[type="text"],
+    input[type="email"]{
+        width: 100%;
+        border: 0;
+        background: #37393b;
+        height: 30px;
+        font-family: 'terminus';
+        font-size: 16px;
+        color: #8d8d8d;
+        padding: 0 20px;
+        box-sizing: border-box
+    }
+    textarea {
     width: 100%;
     border: 0;
     background: #37393b;
@@ -116,28 +105,29 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 65px
-}
+    }
+    .flat-button {
+            color: #08fdd8;
+            font-size: 11px;
+            letter-spacing: 3px;
+            font-family: "terminus";
+            text-decoration: none;
+            padding: 8px 10px;
+            border: 1px solid #08fdd8;
+            float: left;
+            border-radius: 4px;
+            background: transparent;
+            text-transform: uppercase;
+            float: right;
+            text-align: center;
+            margin-right: 10px;
+        }
+    .flat-button:hover {
+            background: #08fdd8;
+            color: #252627
+        }
 
-.contact-form .flat-button {
-    color: #08fdd8;
-    font-size: 11px;
-    letter-spacing: 3px;
-    font-family: "terminus";
-    text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #08fdd8;
-    float: left;
-    border-radius: 4px;
-    background: transparent;
-    text-transform: uppercase;
-    float: right;
-    text-align: center;
-    margin-right: 10px
-}
 
-.contact-form .flat-button:hover {
-    background: #08fdd8;
-    color: #252627
 }
 
 .contact-form input[type="text"]:focus,

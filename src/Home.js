@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Header from './Header';
+import { connect } from 'redux-zero/react';
 import { NavLink } from 'react-router-dom';
-import photo from './img/aydee.png';
 import './css/body.css'; 
 
-const Init_page = ({ name, education, bio }) => {
+const InitPage = ({ name, education, bio }) => {
     return (
 <div id="page" className="en">
   <div className="container home-page" style={{opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)"}}>
@@ -50,7 +51,7 @@ const Init_page = ({ name, education, bio }) => {
 
 const Home = ({ mydata }) => {  
       const listComponent = mydata.map((item, index) => {
-        return <Init_page
+        return <InitPage
           key={index}
           name={item.name}
           education={item.education}
@@ -59,9 +60,13 @@ const Home = ({ mydata }) => {
         />
       })
       return (
-      <section>
-        {listComponent}
-      </section>)
+        <div>
+          <Header />
+          <section >
+            {listComponent}
+          </section>
+        </div>)
     }
     
-    export default Home;
+const mapToProps = ({ mydata }) => ({ mydata });
+export default connect(mapToProps)(Home);

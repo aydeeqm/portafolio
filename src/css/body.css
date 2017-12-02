@@ -3,12 +3,6 @@
 ! 0. SECTION: MENU
 ========================================================== */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility; }
-
 #nav_bar {
   background: #08fdd8;
   width: 65px;
@@ -17,6 +11,13 @@
   top: 0;
   z-index: 3;
   min-height: 500px; }
+  #nav_bar .logo {
+    display: block; }
+    #nav_bar .logo img {
+      display: block;
+      margin: 8px auto;
+      width: 100%;
+      height: auto; }
   #nav_bar nav {
     display: block;
     text-align: center;
@@ -32,10 +33,14 @@
       height: 51px;
       position: relative;
       text-decoration: none; }
+      #nav_bar nav a i {
+        transition: all 0.3s ease-out; }
     #nav_bar nav a.active {
       color: #08fdd8; }
     #nav_bar nav a:hover {
       color: #091624; }
+      #nav_bar nav a:hover i {
+        opacity: 0; }
     #nav_bar nav a:after {
       content: '';
       font-size: 9px;
@@ -68,12 +73,10 @@
         color: #08fdd8;
         border-radius: 20px;
         background: #091624; }
-
-#nav_bar nav a i {
-  transition: all 0.3s ease-out; }
-
-#nav_bar nav a:hover i {
-  opacity: 0; }
+  #nav_bar #mobile-link {
+    display: none; }
+    #nav_bar #mobile-link:hover {
+      color: #091624; }
 
 #nav_bar nav a.active {
   color: #08fdd8;
@@ -108,7 +111,6 @@
   font-style: normal; }
 [class^="icon-"],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -116,7 +118,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -135,22 +136,6 @@
 .icon-prof:before {
   content: "\f2c0"; }
 
-#mobile-link {
-  display: none; }
-
-#mobile-link:hover {
-  color: #091624; }
-
-.logo {
-  display: block; }
-
-.logo img {
-  display: block;
-  margin: 8px auto;
-  width: 100%;
-  height: auto; }
-
-/* --------------------------------------Responsive-------------------------------------------- */
 /* ==========================================================
 ! 1. SECTION: HOME
 ========================================================== */
@@ -181,14 +166,14 @@
   padding-left: 5px; }
   .home-page h1:before {
     content: '<h1>';
-    font-family: 'La Belle Aurore', cursive;
+    font-family: "La Belle Aurore", cursive;
     color: #515152;
     font-size: 18px;
     position: absolute;
     margin-top: -45px; }
   .home-page h1:after {
     content: '<h1/>';
-    font-family: 'La Belle Aurore', cursive;
+    font-family: "La Belle Aurore", cursive;
     color: #515152;
     font-size: 18px;
     position: absolute;
@@ -236,10 +221,6 @@ img {
   vertical-align: middle;
   border-style: none; }
 
-.animation-logo {
-  animation: animation2 1000ms linear both;
-  opacity: 1 !important; }
-
 .home-page .blast {
   opacity: 0;
   display: inline-block;
@@ -253,29 +234,7 @@ img {
 
 .text-page h1 .blast {
   opacity: 0;
-  -webkit-transition: all .3s ease-out;
   transition: all 0.3s ease-out; }
-
-.bg {
-  z-index: 0;
-  width: 400px;
-  height: 609px;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 15%;
-  bottom: 0;
-  left: auto;
-  margin: auto; }
-  .bg .jb {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    opacity: 0; }
 
 .tags {
   color: #515152;
@@ -367,7 +326,7 @@ img {
 
 .container.about .text-zone h1:before {
   content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
@@ -375,7 +334,7 @@ img {
 
 .container.about .text-zone h1:after {
   content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
@@ -464,7 +423,7 @@ img {
 
 .container.skills .text-zone h1:before {
   content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
@@ -472,7 +431,7 @@ img {
 
 .container.skills .text-zone h1:after {
   content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 18px;
   position: absolute;
@@ -805,11 +764,11 @@ img {
 .ch-info p a {
   color: rgba(255, 255, 255, 0.822);
   font-style: normal;
+  text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 9px;
-  letter-spacing: 1px;
-  font-family: 'Open Sans', Arial, sans-serif; }
+  letter-spacing: 1px; }
 
 .ch-info p a:hover {
   color: rgba(255, 242, 34, 0.8); }
@@ -924,119 +883,104 @@ img {
   vertical-align: middle;
   display: table-cell;
   max-height: 90%; }
-
-.container.contact .text-zone h1 {
-  font-size: 53px;
-  font-family: 'Audiowide', cursive;
-  color: #08fdd8;
-  font-weight: normal;
-  margin-top: 0;
-  position: relative;
-  margin-bottom: 40px; }
-
+  .container.contact .text-zone h1 {
+    font-size: 53px;
+    font-family: 'Audiowide', cursive;
+    color: #08fdd8;
+    font-weight: normal;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px; }
+    .container.contact .text-zone h1:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #515152;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px; }
+    .container.contact .text-zone h1:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #515152;
+      font-size: 18px;
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+      margin-left: 20px; }
+  .container.contact .text-zone p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    font-family: 'terminus';
+    letter-spacing: 0.5px; }
 .container.contact .blast {
   opacity: 0;
-  -webkit-transition: all .3s ease-out;
   transition: all 0.3s ease-out; }
-
-.container.contact .text-zone h1:before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  margin-top: -10px; }
-
-.container.contact .text-zone h1:after {
-  content: '<h1/>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #515152;
-  font-size: 18px;
-  position: absolute;
-  left: -20px;
-  bottom: -20px;
-  margin-left: 20px; }
-
-.container.contact .text-zone p {
-  font-size: 18px;
-  line-height: 20px;
-  color: #fff;
-  font-family: 'terminus';
-  letter-spacing: 0.5px; }
 
 .contact-form {
   width: 100%; }
-
-.contact-form ul {
-  padding: 0;
-  margin: 0; }
-
-.contact-form ul li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-bottom: 10px;
-  opacity: 0.7;
-  overflow: hidden;
-  display: block;
-  clear: both;
-  position: relative; }
-
-.contact-form ul li.half {
-  width: 49%;
-  margin-left: 2%;
-  float: left;
-  clear: none; }
-
-.contact-form ul li.submit {
-  overflow: hidden; }
-
-.contact-form ul li.half:first-child {
-  margin-left: 0; }
-
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-  width: 100%;
-  border: 0;
-  background: #37393b;
-  height: 30px;
-  font-family: 'terminus';
-  font-size: 16px;
-  color: #8d8d8d;
-  padding: 0 20px;
-  box-sizing: border-box; }
-
-.contact-form textarea {
-  width: 100%;
-  border: 0;
-  background: #37393b;
-  height: 40px;
-  font-size: 16px;
-  font-family: "terminus";
-  color: #8d8d8d;
-  padding: 20px;
-  box-sizing: border-box;
-  min-height: 65px; }
-
-.contact-form .flat-button {
-  color: #08fdd8;
-  font-size: 11px;
-  letter-spacing: 3px;
-  font-family: "terminus";
-  text-decoration: none;
-  padding: 8px 10px;
-  border: 1px solid #08fdd8;
-  float: left;
-  border-radius: 4px;
-  background: transparent;
-  text-transform: uppercase;
-  float: right;
-  text-align: center;
-  margin-right: 10px; }
-
-.contact-form .flat-button:hover {
-  background: #08fdd8;
-  color: #252627; }
+  .contact-form ul {
+    padding: 0;
+    margin: 0; }
+    .contact-form ul li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0.7;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative; }
+      .contact-form ul li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none; }
+        .contact-form ul li.half:first-child {
+          margin-left: 0; }
+      .contact-form ul li.submit {
+        overflow: hidden; }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 30px;
+    font-family: 'terminus';
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    box-sizing: border-box; }
+  .contact-form textarea {
+    width: 100%;
+    border: 0;
+    background: #37393b;
+    height: 40px;
+    font-size: 16px;
+    font-family: "terminus";
+    color: #8d8d8d;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 65px; }
+  .contact-form .flat-button {
+    color: #08fdd8;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-family: "terminus";
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #08fdd8;
+    float: left;
+    border-radius: 4px;
+    background: transparent;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px; }
+  .contact-form .flat-button:hover {
+    background: #08fdd8;
+    color: #252627; }
 
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
@@ -1155,9 +1099,12 @@ input:focus:-ms-input-placeholder {
       font-size: 25px;
       font-family: 'Lobster', cursive; }
 
-/* *{
-    outline: 1px red solid;
-} */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+
 body {
   background: linear-gradient(to right, #091624 0%, #0a1f2e 31%, #00353b 61%, #225757 100%);
   display: block;
@@ -1280,33 +1227,8 @@ body {
     transform: none !important; }
 
   #pyramid {
-    display: none; }
-
-  .bg {
-    width: 263px;
-    height: 400px; }
-
-  /*     .text-zone {
-          margin-top: 150px !important
-      } */ }
-@media (max-width: 800px) and (orientation: landscape) {
-  #rotate {
-    position: fixed;
-    background-size: 100% auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999999999;
-    display: block !important;
-    opacity: 1 !important; } }
+    display: none; } }
 @media (max-width: 960px) {
-  #world {
-    position: relative !important;
-    width: 90% !important;
-    height: auto !important;
-    margin: auto; }
-
   #page {
     height: auto;
     position: relative; }
@@ -1321,9 +1243,6 @@ body {
     margin: auto;
     overflow: hidden; }
 
-  .white .logo {
-    padding-bottom: 4px; }
-
   #nav_bar {
     width: 100%;
     height: 60px;
@@ -1332,84 +1251,59 @@ body {
     left: 0;
     z-index: 3;
     min-height: 0; }
-
-  .white #nav_bar {
-    border-right: 0;
-    border-bottom: 1px solid #f4f4f4; }
-
-  .logo {
-    float: left;
-    padding: 2px 0;
-    margin-right: 20px; }
-
-  .logo img {
-    display: block;
-    margin: 0 15px;
-    width: auto;
-    height: auto; }
-
-  .logo > img:first-child {
-    height: 60px; }
-
-  .lang {
-    float: left;
-    width: auto;
-    margin-top: 0;
-    line-height: 60px; }
-    .lang a {
-      margin-top: 0;
-      display: inline;
-      margin-right: 7px; }
-
-  #nav_bar nav {
-    width: 42%;
-    position: absolute;
-    left: 47%;
-    margin-left: -19%;
-    float: left;
-    overflow: hidden;
-    text-align: center;
-    height: 60px;
-    top: 0;
-    margin-top: 0; }
-
-  #nav_bar nav a {
-    float: left;
-    margin-left: 14%;
-    line-height: 60px;
-    height: 60px; }
-
-  #nav_bar nav a:first-child {
-    margin-left: 0; }
-
-  #nav_bar nav a.active {
-    width: 17%; }
-
-  #nav_bar ul {
-    position: static;
-    bottom: 20px;
-    width: auto;
-    height: 60px;
-    line-height: 60px;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    float: right; }
-
-  #nav_bar ul li {
-    float: right;
-    height: 60px;
-    line-height: 60px;
-    margin: 0 10px;
-    padding: 17px 0; }
-
-  #nav_bar ul li a {
-    padding: 4px 0; }
-
-  #nav_bar ul li a:hover {
-    width: 25px; }
+    #nav_bar .logo {
+      float: left;
+      padding: 2px 0;
+      margin-right: 20px; }
+      #nav_bar .logo img {
+        display: block;
+        margin: 0 15px;
+        width: auto;
+        height: auto; }
+      #nav_bar .logo > img:first-child {
+        height: 60px; }
+    #nav_bar nav {
+      width: 42%;
+      position: absolute;
+      left: 47%;
+      margin-left: -19%;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      height: 60px;
+      top: 0;
+      margin-top: 0; }
+      #nav_bar nav a {
+        float: left;
+        margin-left: 14%;
+        line-height: 60px;
+        height: 60px; }
+        #nav_bar nav a:first-child {
+          margin-left: 0; }
+        #nav_bar nav a.active {
+          width: 17%; }
+    #nav_bar ul {
+      position: static;
+      bottom: 20px;
+      width: auto;
+      height: 60px;
+      line-height: 60px;
+      display: block;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      float: right; }
+      #nav_bar ul li {
+        float: right;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 10px;
+        padding: 17px 0; }
+        #nav_bar ul li a {
+          padding: 4px 0; }
+          #nav_bar ul li a:hover {
+            width: 25px; }
 
   .container {
     max-width: 100%;
@@ -1420,6 +1314,9 @@ body {
     position: relative;
     top: 0;
     overflow: hidden; }
+    .container.gallery {
+      position: absolute;
+      min-height: 1200px; }
 
   .sound-cloud {
     position: static;
@@ -1427,10 +1324,6 @@ body {
     margin-left: 10%;
     padding-top: 20px;
     margin-bottom: 50px; }
-
-  .container.gallery {
-    position: absolute;
-    min-height: 1200px; }
 
   .magicwall .magicwall-grid {
     margin-left: 0;
@@ -1531,28 +1424,45 @@ body {
   .project img {
     height: 260px; } }
 @media (max-width: 530px) {
-  .preloader .inner {
-    width: 80%; }
-
-  #awwwards {
-    display: none; }
-
-  #mobile-link {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    margin: 10px 20px 10px 10px;
-    display: block; }
-
-  #nav_bar ul {
-    display: none; }
+  #nav_bar {
+    position: fixed; }
+    #nav_bar nav {
+      width: 100%;
+      position: fixed;
+      left: 100%;
+      opacity: 0;
+      margin-left: 0;
+      float: left;
+      overflow: hidden;
+      text-align: center;
+      height: 60px;
+      top: 60px;
+      margin-top: 0;
+      background: #63a5a2;
+      transition: all .3s ease-out; }
+      #nav_bar nav a {
+        float: left;
+        margin-left: 0 !important;
+        line-height: 60px;
+        height: 60px;
+        width: 20%; }
+        #nav_bar nav a.active {
+          width: 17%; }
+      #nav_bar nav.show {
+        left: 0;
+        opacity: 1; }
+    #nav_bar ul {
+      display: none; }
+    #nav_bar #mobile-link {
+      font-size: 30px;
+      color: #fff;
+      float: right;
+      margin: 10px 20px 10px 10px;
+      display: block; }
 
   .home-page .text-zone {
     width: 85%;
     left: 5%; }
-
-  #nav_bar nav a.active {
-    width: 17%; }
 
   body {
     overflow-x: hidden; }
@@ -1576,38 +1486,6 @@ body {
   .inf-map > span {
     position: relative;
     top: -10px; }
-
-  #nav_bar {
-    position: fixed; }
-
-  #nav_bar nav {
-    width: 100%;
-    position: fixed;
-    left: 100%;
-    opacity: 0;
-    margin-left: 0;
-    float: left;
-    overflow: hidden;
-    text-align: center;
-    height: 60px;
-    top: 60px;
-    margin-top: 0;
-    background: #63a5a2;
-    transition: all 0.3s ease-out; }
-
-  .white #nav_bar nav {
-    background: #fff; }
-
-  #nav_bar nav a {
-    float: left;
-    margin-left: 0 !important;
-    line-height: 60px;
-    height: 60px;
-    width: 20%; }
-
-  #nav_bar nav.show {
-    left: 0;
-    opacity: 1; }
 
   .contact-form ul li.half {
     width: 100%;

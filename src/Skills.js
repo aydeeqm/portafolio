@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import Header from './Header';
-import {mydata} from './Data'
 import { connect } from 'redux-zero/react';
 import './css/body.css'; 
 
-const Third_page = ({title, html, jquery, javascript, git, css, bootstrap, react }) => {
+const ThirdPage = ({title, html, jquery, javascript, git, css, bootstrap, react }) => {
     return (
         <div id="page" className="en">
             <div className="container skills" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
@@ -87,20 +85,12 @@ const Skills = () => {
           <div>
               <Header />
             <section>
-                <Third_page title={'Mis Habilidades'}
-                html={'HTML5'}
-                jquery={'JQUERY'}
-                javascript={'JAVASCRIPT'}
-                git={'GIT'}
-                css={'CSS'}
-                bootstrap={'BOOTSTRAP'}
-                react={'REACT / REDUX'}
-                />
+                <ThirdPage title={'Mis Habilidades'} />
             </section>
         </div>
       )
     }
-
+ 
 const mapToProps = ({ mydata }) => ({ mydata });
 export default connect(mapToProps)(Skills);
 
