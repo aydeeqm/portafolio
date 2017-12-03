@@ -83,6 +83,7 @@ const Mypro = () => {
                     <div className="ch-item onlyimg ch-img-6">
                         <div className="ch-info">
                             <h3>Laberinto</h3>
+                            <p>Puzzle para jugar laberinto con aplicacion de javascritp DOM</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/juego-laberinto" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
@@ -96,6 +97,7 @@ const Mypro = () => {
                     <div className="ch-item onlyimg ch-img-7">
                         <div className="ch-info">
                             <h3>Routing</h3>
+                            <p>Consulta de lenjuajes para desarrollo de rutas url</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/Routing-V2" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
@@ -109,6 +111,7 @@ const Mypro = () => {
                     <div className="ch-item onlyimg ch-img-8">
                         <div className="ch-info">
                             <h3>Foro</h3>
+                            <p>palataforma de comentarios con aplicacion de React.js y Firebase</p>
                             <figcaption >
                                 <div className="classless">
                                     <div className="icon"><a href="https://github.com/AydeeQM/Foro-Redux" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
