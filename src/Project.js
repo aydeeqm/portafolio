@@ -135,8 +135,8 @@ const Colaborativos = () => {
                                         <p>Tienda <a href="#"> online</a> para ordenar sushi</p>
                                         <figcaption >
                                             <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="https://github.com/AydeeQM/SushiStore" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/SushiStore/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                             </div>
                                         </figcaption>
                                     </div>
@@ -149,8 +149,8 @@ const Colaborativos = () => {
                                     <p>Mapeo de los indices de anemia en el Perú</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="https://github.com/AydeeQM/Yanapa" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Yanapa/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>
@@ -163,8 +163,8 @@ const Colaborativos = () => {
                                     <p>Página para consolas y la linea de video juegos</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="https://github.com/AydeeQM/Game-planet" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Game-planet/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>
@@ -177,8 +177,8 @@ const Colaborativos = () => {
                                     <p>Plataforma de pedir servicio de taxi con geolocalización</p>
                                     <figcaption >
                                         <div className="classless">
-                                            <div className="icon"><a href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                            <a className="icon venobox vbox-item" href="#" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                            <div className="icon"><a href="https://github.com/AydeeQM/Lyft-Car-React" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                            <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Lyft-Car-React/" target="_blank" rel='noopener noreferrer' ><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                         </div>
                                     </figcaption>
                                 </div>

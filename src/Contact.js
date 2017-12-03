@@ -1,10 +1,21 @@
 import React from 'react';
 import Header from './Header';
 import { connect } from 'redux-zero/react';
+import { readAllComments, addComments} from './actions';
 import './css/body.css';
 
-
+readAllComments();
 const LastPage = () => {
+    const onSubmit = (e) => {
+        e.preventDefault();
+        if (this.name.value && this.email.value && this.subject.value && this.msm.value) {
+            addComments(this.name.value, this.email.value, this.subject.value, this.msm.value);
+            this.name.value = '';
+            this.email.value = '';
+            this.subject.value = '';
+            this.msm.value = '';
+        }
+    }
     return (
         <div id="page" className="en">
             <div className="container contact" style={{ opacity: 1, transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
@@ -24,22 +35,23 @@ const LastPage = () => {
                         </h1>
                         <p>Si tiene alguna pregunta, no dude en ponerse en contacto...</p>
                         <div className="contact-form">
-                            <form id="contact">
+                            <form id="contact" onSubmit={onSubmit}>
                                 <ul>
-                                <li className="half animated fadeInUp">
-                                    <input className="input__field input__field--hoshi" placeholder="Nombre" type="text" name="name"/>
-                                    <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
-                                <li className="half animated fadeInUp"> 
-                                <input className="input__field input__field--hoshi" placeholder="Correo" type="email" name="email"/> 
-                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
-                                <li className="animated fadeInUp"> 
-                                <input className="input__field input__field--hoshi" placeholder="Asunto" type="text" name="subject" /> 
-                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
-                                <li className="animated fadeInUp">
-                                <textarea className="input__field input__field--hoshi" placeholder="Message" name="msg"></textarea>
-                                <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
-                                <li className="submit animated fadeInUp"> 
-                                <input id="submit" type="submit" className="flat-button" value="ENVIAR" /></li>
+                                    <li className="half animated fadeInUp">
+                                    <input className="input__field input__field--hoshi" placeholder="Nombre" type="text" name="name" ref={e => { this.name = e }} required/>
+                                        <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                    <li className="half animated fadeInUp"> 
+                                    <input className="input__field input__field--hoshi" placeholder="Correo" type="email" name="email" ref={e => { this.email = e }} required/> 
+                                        <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                    <li className="animated fadeInUp"> 
+                                    <input className="input__field input__field--hoshi" placeholder="Asunto" type="text" name="subject" ref={e => { this.subject = e }}  required/> 
+                                        <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                    <li className="animated fadeInUp">
+                                    <textarea className="input__field input__field--hoshi" placeholder="Message" name="msg" ref={e => { this.msm = e }}  required></textarea>
+                                        <label className="input__label input__label--hoshi input__label--hoshi-color-2"></label></li>
+                                    <li className="submit animated fadeInUp"> 
+                                        <input id="submit" type="submit" className="flat-button" value="ENVIAR" />
+                                    </li>
                                 </ul>
                             </form>
                         </div>
@@ -61,7 +73,6 @@ const LastPage = () => {
                                 <p>para siempre”.</p><p>
                                 </p>
                             </div>
-                            {/* <img src={mirada} style={{width:"61%"}} className="img-responsive"/> */}
                         </div>
                     </div>
                 <span className="tags bottom-tags"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br></br> &lt;/html&gt;</span>
