@@ -201,8 +201,12 @@ const FourthPage = () => {
                     <div className="portafolio-content">
                         <div className="project_container">
                             <div id="mySidenav" className="sidenav">
-                                <NavLink id="projects" to="/project/mypro" className="filter" >Mis Proyectos</NavLink>
-                                <NavLink id="blog" to="/project/procolab" className="filter" >Proyectos Colaborativos</NavLink>
+                                <div className="select-project" id="projects" >
+                                    <NavLink to="/project/mypro" className="filter" >Mis Proyectos</NavLink>
+                                </div>
+                                <div className="select-project" id="blog">
+                                   <NavLink to="/project/procolab" className="filter" >Proyectos Colaborativos</NavLink> 
+                                </div>  
                             </div>
                             <div className="container-fluid">
                                 <Switch>

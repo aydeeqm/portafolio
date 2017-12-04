@@ -683,17 +683,40 @@ img {
 
 .filter:hover {
   color: #fff;
-  background: #08fdd8;
+  background: rgba(110, 110, 86, 0.451);
   text-decoration: none;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3); }
 
 .project_controls a.active,
-.filter.active,
-.project_controls a.mixitup-control-active {
-  background: #08fdd8;
+.filter.active {
+  background: rgba(247, 238, 0, 0.451);
   text-decoration: none;
-  color: #091624;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3); }
+
+/* Style the links inside the sidenav */
+#mySidenav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px; }
+  #mySidenav .select-project {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px; }
+    #mySidenav .select-project#projects, #mySidenav .select-project#blog {
+      background: #091b2e6e; }
+    #mySidenav .select-project a {
+      font-family: 'Audiowide', cursive;
+      transition: 0.3s;
+      text-decoration: none;
+      font-size: 14px;
+      color: #fdfafa;
+      z-index: 10;
+      width: 100%;
+      padding: 6px 0; }
 
 .main {
   width: 100%;
@@ -701,7 +724,7 @@ img {
   position: relative; }
 
 .ch-grid {
-  margin: 60px 0 0 0;
+  margin: 30px 0 0 0;
   list-style: none;
   display: block;
   text-align: center;
@@ -871,34 +894,6 @@ img {
 
 .classless .icon {
   cursor: pointer; }
-
-/* Style the links inside the sidenav */
-#mySidenav a {
-  position: absolute;
-  left: -96px;
-  font-family: 'Audiowide', cursive;
-  transition: 0.3s;
-  padding: 5px 15px 5px 69px;
-  width: 175px;
-  text-decoration: none;
-  font-size: 12px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  z-index: 10; }
-
-#mySidenav a:hover {
-  left: 0;
-  /* On mouse-over, make the elements appear as they should */ }
-
-#projects {
-  top: 45px;
-  background-color: #da870b;
-  /* Red */ }
-
-#blog {
-  top: 115px;
-  background-color: #f800ae;
-  /* Blue */ }
 
 /* ==========================================================
 ! 6. SECTION: CONTACT
@@ -1410,14 +1405,14 @@ body {
   #map .frase p {
     font-size: 25px; }
 
-  #mySidenav a {
-    left: -117px;
-    padding: 15px 15px 5px 25px;
-    width: 135px;
-    font-size: 12px; }
+  #mySidenav {
+    height: 40px; }
 
   .gallery span {
     display: none; }
+
+  .ch-grid {
+    padding: 0; }
 
   .sound-cloud .section-title {
     font-size: 32px; } }
