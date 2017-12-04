@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Audiowide|La+Belle+Aurore|Lobster");
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @font-face {
   font-family: 'icomoon';
@@ -708,18 +709,19 @@ img {
   padding-left: 7%; }
 
 .ch-grid li {
-  width: 255px;
-  height: 180px;
+  width: 265px;
+  height: 175px;
   display: inline-block;
-  margin: 15px; }
+  margin: 10px; }
 
 .ch-item {
   width: 100%;
   height: 100%;
-  border-radius: 15%;
+  /* border-radius: 15%; */
   position: relative;
   cursor: default;
-  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 10px rgba(16, 61, 54, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.507);
+  /* box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 10px rgba(16, 61, 54, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1); */
   transition: all 0.4s ease-in-out; }
 
 .onlyimg {
@@ -769,7 +771,7 @@ img {
   backface-visibility: hidden; }
 
 .ch-info h3 {
-  color: #fff;
+  color: #ffe605;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
@@ -806,7 +808,7 @@ img {
   display: table; }
 
 .ch-item:hover {
-  box-shadow: inset 0 0 0 110px rgba(58, 11, 2, 0.699), inset 0 0 0 10px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0 0 0 110px rgba(1, 13, 29, 0.9), inset 0 0 0 2px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0); }
 
 .ch-item:hover .ch-info {
   opacity: 1;
