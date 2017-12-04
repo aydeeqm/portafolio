@@ -1,8 +1,58 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?tts1zr");
+  src: url("../fonts/icomoon.eot?tts1zr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tts1zr") format("truetype"), url("../fonts/icomoon.woff?tts1zr") format("woff"), url("../fonts/icomoon.svg?tts1zr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-contact_mail:before {
+  content: "\e0d0"; }
+
+.icon-home:before {
+  content: "\e88a"; }
+
+.icon-gear:before {
+  content: "\f013"; }
+
+.icon-mail:before {
+  content: "\f0e0"; }
+
+.icon-prof:before {
+  content: "\f2c0"; }
+
+.icon-cloud-download:before {
+  content: "\e9c2"; }
+
+.icon-eye:before {
+  content: "\e9ce"; }
+
+.icon-whatsapp:before {
+  content: "\ea93"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-linkedin:before {
+  content: "\eac9"; }
+
 /* ==========================================================
 ! 0. SECTION: MENU
 ========================================================== */
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 #nav_bar {
   background: #08fdd8;
   width: 65px;
@@ -102,39 +152,6 @@
 
 #nav_bar nav a:hover:after {
   opacity: 1; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?qx6tzk");
-  src: url("../fonts/icomoon.eot?qx6tzk#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qx6tzk") format("truetype"), url("../fonts/icomoon.woff?qx6tzk") format("woff"), url("../fonts/icomoon.svg?qx6tzk#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"],
-[class*=" icon-"] {
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-home:before {
-  content: "\e88a"; }
-
-.icon-gear:before {
-  content: "\f013"; }
-
-.icon-eye:before {
-  content: "\f06e"; }
-
-.icon-mail:before {
-  content: "\f0e0"; }
-
-.icon-prof:before {
-  content: "\f2c0"; }
 
 /* ==========================================================
 ! 1. SECTION: HOME
@@ -381,17 +398,27 @@ img {
     font-family: 'Audiowide', cursive; }
   .sound-cloud .distinciones {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
-    .sound-cloud .distinciones .top {
+    .sound-cloud .distinciones .reconocimiento h2 {
+      color: #fff;
+      font-size: 15px;
+      font-family: "terminus"; }
+    .sound-cloud .distinciones .reconocimiento .top {
       background: #091624;
-      border-radius: 100%; }
-    .sound-cloud .distinciones .rock {
+      border-radius: 100%;
+      margin: 0px 20px;
+      height: 75px; }
+    .sound-cloud .distinciones .reconocimiento .rock {
       background: #dbe0e0;
-      border-radius: 100%; }
-    .sound-cloud .distinciones .best {
+      border-radius: 100%;
+      margin: 0px 20px;
+      height: 75px; }
+    .sound-cloud .distinciones .reconocimiento .best {
       background: #091624;
-      border-radius: 100%; }
+      border-radius: 100%;
+      margin: 0px 27px;
+      height: 75px; }
 
 /* ==========================================================
 ! 4. SECTION: SKILLS
@@ -1047,34 +1074,16 @@ input:focus::-moz-placeholder {
 input:focus:-ms-input-placeholder {
   color: transparent; }
 
-.uk-link, a:hover {
-  color: white; }
-
-.uk-tooltip {
-  background: #08fdd0;
-  color: #192416;
-  border-radius: 10px; }
-
 .contactos {
-  padding: 20px 5px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 25px 30px 0 30px; }
   .contactos a {
-    background: #445050;
-    color: #fff; }
-
-.fa-download:before {
-  content: "\f019"; }
-
-.button_download {
-  display: block;
-  background: #2DAEE0;
-  color: #fff;
-  border: 1px solid #2DAEE0;
-  color: #fff;
-  margin: 10px 0;
-  max-width: 220px;
-  padding: 6px 19px;
-  transition: all 0.3s;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none; }
 
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);

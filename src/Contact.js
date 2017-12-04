@@ -55,12 +55,19 @@ const LastPage = () => {
                                 </ul>
                             </form>
                         </div>
-                    <div className="uk-text-center contactos">
+{/*                     <div className="uk-text-center contactos">
                         <a target="_blank" href="https://github.com/AydeeQM" className="uk-icon-button uk-margin-small-right" uk-icon="icon: github" rel='noopener noreferrer' ></a>
                         <a target="_blank" href="https://www.linkedin.com/in/aydeequispe" className="uk-icon-button  uk-margin-small-right" uk-icon="icon:  linkedin" rel='noopener noreferrer' ></a>
                         <a title="aydee.qm@gmail.com" uk-tooltip="pos: bottom" href="mailto:aydee.qm@gmail.com" className="uk-icon-button uk-margin-small-right" uk-icon="icon: mail" rel='noopener noreferrer' ></a>
                         <a target="_blank" title="(51) 979039472" uk-tooltip="pos: bottom" href="https://api.whatsapp.com/send?phone=51979039472&" className="uk-icon-button uk-margin-small-right" uk-icon="icon:  whatsapp" rel='noopener noreferrer' ></a>
                         <a target="_blank" href="cv-aydee.pdf" title="Resume" download="cv-aydee.pdf" uk-tooltip="pos: bottom" className="uk-icon-button uk-margin-small-right" uk-icon="icon: download" rel='noopener noreferrer' ></a>
+                    </div> */}
+                    <div className="contactos">
+                        <a target="_blank" title="Mi repositorio" href="https://github.com/AydeeQM" rel='noopener noreferrer'><span className="icon-github"></span></a>
+                        <a target="_blank" title="Mi linkendin" href="https://www.linkedin.com/in/aydeequispe" rel='noopener noreferrer'><span className="icon-linkedin"></span></a>
+                        <a title="aydee.qm@gmail.com" href="mailto:aydee.qm@gmail.com" rel='noopener noreferrer'><span className="icon-contact_mail"></span></a>
+                        <a target="_blank" title="Contáctame (+51) 979039472" href="https://api.whatsapp.com/send?phone=51979039472&" rel='noopener noreferrer' ><span className="icon-whatsapp"></span></a>
+                        <a target="_blank" href="cv-aydee.pdf" title="Descarga mi CV" download="cv-aydee.pdf" rel='noopener noreferrer'><span className="icon-cloud-download"></span></a>
                     </div>
                     </div>
                     <div className="map-wrap">

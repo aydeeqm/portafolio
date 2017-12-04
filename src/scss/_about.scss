@@ -90,19 +90,34 @@
     }
     .distinciones{
         display:flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        .top{
-            background: #091624;
-            border-radius: 100%;
-        }
-        .rock{
-            background: #dbe0e0;
-            border-radius: 100%;
-        }
-        .best{
-            background: #091624;
-            border-radius: 100%;
+        .reconocimiento{
+            h2{
+                color: #fff;
+                font-size: 15px;
+                font-family: "terminus"
+            }
+            .top {
+                background: #091624;
+                border-radius: 100%;
+                margin: 0px 20px;
+                height: 75px;
+            }
+
+            .rock {
+                background: #dbe0e0;
+                border-radius: 100%;
+                margin: 0px 20px;
+                height: 75px;
+            }
+
+            .best {
+                background: #091624;
+                border-radius: 100%;
+                margin: 0px 27px;
+                height: 75px;
+            }
         }
     }
 }

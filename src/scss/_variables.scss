@@ -2,3 +2,66 @@ $colorblue:#08fdd8;
 $colorblack: #091624;
 $font-etiqueta: 'La Belle Aurore', cursive;
 $color-etiqueta: #515152;
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tts1zr');
+    src: url('../fonts/icomoon.eot?tts1zr#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tts1zr') format('truetype'), url('../fonts/icomoon.woff?tts1zr') format('woff'), url('../fonts/icomoon.svg?tts1zr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contact_mail:before {
+    content: "\e0d0";
+}
+
+.icon-home:before {
+    content: "\e88a";
+}
+
+.icon-gear:before {
+    content: "\f013";
+}
+
+.icon-mail:before {
+    content: "\f0e0";
+}
+
+.icon-prof:before {
+    content: "\f2c0";
+}
+
+.icon-cloud-download:before {
+    content: "\e9c2";
+}
+
+.icon-eye:before {
+    content: "\e9ce";
+}
+
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+
+.icon-github:before {
+    content: "\eab0";
+}
+
+.icon-linkedin:before {
+    content: "\eac9";
+}

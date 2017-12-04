@@ -28,16 +28,25 @@ const SecondPage = ({bio1, bio2, bio3}) => {
                     </p>
                 </div>
                 <div className="sound-cloud">
-                    <h2 className="section-title">{'_Disitinción de Laboratoria.'}</h2>
+                    <h2 className="section-title">{'_Distinción de Laboratoria.'}</h2>
                     <div className="distinciones">
-                        <div className="top">
-                            <img src={top} style={{ width: "80px", height: "75px" }} alt="top" />&nbsp;
+                        <div className="reconocimiento text-center">
+                            <h2>Excelencia</h2>
+                            <div className="top">
+                                <img src={top} style={{ width: "80px", height: "75px" }} alt="top" />&nbsp;
+                            </div>
                         </div>
-                        <div className="rock">
-                            <img src={rock} alt="rock"/>&nbsp;
+                        <div className="reconocimiento text-center">
+                            <h2>Sobresaliente</h2>
+                            <div className="rock">
+                                <img src={rock} alt="rock"/>&nbsp;
+                            </div>
                         </div>
-                        <div className="best">
-                            <img src={best} alt="best squad" />&nbsp;
+                        <div className="reconocimiento text-center">
+                            <h2>Trabajo en equipo</h2>
+                            <div className="best">}
+                                <img src={best} alt="best squad" />&nbsp;
+                            </div>
                         </div>
                     </div>
                 </div>
