@@ -126,7 +126,7 @@ body {
     }
 
     h1 {
-        font-size: 54px !important;
+        font-size: 50px !important;
         line-height: 45px
     }
     .container.about .text-zone {
@@ -268,9 +268,9 @@ body {
     .sound-cloud {
         position: static;
         width: 80%;
-        margin-left: 10%;
-        padding-top: 20px;
-        margin-bottom: 50px;
+        margin-left: 8%;
+        padding-top: 5px;
+        margin-bottom: 5px;
     }
 
     .magicwall .magicwall-grid {
@@ -283,7 +283,7 @@ body {
     }
     .top-tags {
         bottom: auto;
-        top: 95px
+        top: 77px
     }
     .bottom-tags {
         position: absolute;
@@ -303,8 +303,17 @@ body {
     }
     .container.about .text-zone,
     .container.skills .text-zone {
-        width: 80%;
-        min-height: 0
+        width: 85%;
+        min-height: 0;
+        margin-top: 130px;
+        h1{
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+        }
     }
 
     .section-skills {
@@ -338,7 +347,8 @@ body {
         display: none
     }
     .container.contact .text-zone {
-        width: 80%
+        width: 85%;
+        margin-top: 140px;
     }
     .map-wrap {
         float: none;
@@ -367,7 +377,11 @@ body {
         padding: 0;
     }
     .sound-cloud .section-title {
-        font-size: 32px;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .sound-cloud .distinciones .reconocimiento h2 {
+        margin-top: 2px;
     }
 }
 
@@ -475,6 +489,12 @@ body {
     .progress-radial {
         margin: 10px 15px;
     }
+    .sound-cloud .distinciones .reconocimiento .top,
+    .sound-cloud .distinciones .reconocimiento .best {
+        background: none;
+        border-radius: 0%;
+        margin: 0px;
+    }
 }
 
 @media(max-width:440px) {
@@ -489,6 +509,18 @@ body {
     }
     .progress-radial {
         margin: 10px 8px;
+    }
+    .sound-cloud .distinciones .reconocimiento h2 {
+    font-size: 0px;
+    margin-top: 0px;
+    margin-bottom:0px
+    }
+    .sound-cloud .distinciones .reconocimiento .top,
+    .sound-cloud .distinciones .reconocimiento .best{
+        background: none;
+        border-radius: 0%;
+        margin: 0px;
+        height: 77px;
     }
 }
 

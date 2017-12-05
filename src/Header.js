@@ -22,7 +22,6 @@ const Header = ({showing, isHide}) => {
                <li><a href="https://www.linkedin.com/in/aydeequispe" target="_blank" rel='noopener noreferrer' ><i className="fa fa-linkedin"></i></a></li>    
                <li><a href="https://github.com/AydeeQM" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github"></i></a></li>
                <li><a href="https://www.facebook.com/QM.AyDee" target="_blank" rel='noopener noreferrer' ><i className="fa fa-facebook"></i></a></li>
-               <li><a href="https://twitter.com/AyDee_QM" target="_blank" rel='noopener noreferrer' ><i className="fa fa-twitter"></i></a></li>
            </ul>
            <a id="mobile-link" onClick={() => isHidden()}><i className="fa fa-bars"></i></a>
            {showing &&

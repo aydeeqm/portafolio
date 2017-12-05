@@ -908,7 +908,7 @@ img {
   display: table-cell;
   max-height: 90%; }
   .container.contact .text-zone h1 {
-    font-size: 53px;
+    font-size: 45px;
     font-family: 'Audiowide', cursive;
     color: #08fdd8;
     font-weight: normal;
@@ -1203,7 +1203,7 @@ body {
     width: 36%; }
 
   h1 {
-    font-size: 54px !important;
+    font-size: 50px !important;
     line-height: 45px; }
 
   .container.about .text-zone {
@@ -1327,9 +1327,9 @@ body {
   .sound-cloud {
     position: static;
     width: 80%;
-    margin-left: 10%;
-    padding-top: 20px;
-    margin-bottom: 50px; }
+    margin-left: 8%;
+    padding-top: 5px;
+    margin-bottom: 5px; }
 
   .magicwall .magicwall-grid {
     margin-left: 0;
@@ -1341,7 +1341,7 @@ body {
 
   .top-tags {
     bottom: auto;
-    top: 95px; }
+    top: 77px; }
 
   .bottom-tags {
     position: absolute;
@@ -1361,8 +1361,17 @@ body {
 
   .container.about .text-zone,
   .container.skills .text-zone {
-    width: 80%;
-    min-height: 0; }
+    width: 85%;
+    min-height: 0;
+    margin-top: 130px; }
+    .container.about .text-zone h1,
+    .container.skills .text-zone h1 {
+      margin-bottom: 30px; }
+    .container.about .text-zone p,
+    .container.skills .text-zone p {
+      font-size: 17px;
+      line-height: 18px;
+      letter-spacing: 0.5px; }
 
   .section-skills {
     width: 100%;
@@ -1393,7 +1402,8 @@ body {
     display: none; }
 
   .container.contact .text-zone {
-    width: 80%; }
+    width: 85%;
+    margin-top: 140px; }
 
   .map-wrap {
     float: none;
@@ -1415,7 +1425,11 @@ body {
     padding: 0; }
 
   .sound-cloud .section-title {
-    font-size: 32px; } }
+    font-size: 20px;
+    margin-top: 0px; }
+
+  .sound-cloud .distinciones .reconocimiento h2 {
+    margin-top: 2px; } }
 @media (max-width: 750px) {
   #nav_bar nav a {
     margin-left: 10%; }
@@ -1501,7 +1515,13 @@ body {
     top: 20px; }
 
   .progress-radial {
-    margin: 10px 15px; } }
+    margin: 10px 15px; }
+
+  .sound-cloud .distinciones .reconocimiento .top,
+  .sound-cloud .distinciones .reconocimiento .best {
+    background: none;
+    border-radius: 0%;
+    margin: 0px; } }
 @media (max-width: 440px) {
   .chart-group {
     width: 100%;
@@ -1513,7 +1533,19 @@ body {
     font-size: 45px !important; }
 
   .progress-radial {
-    margin: 10px 8px; } }
+    margin: 10px 8px; }
+
+  .sound-cloud .distinciones .reconocimiento h2 {
+    font-size: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+  .sound-cloud .distinciones .reconocimiento .top,
+  .sound-cloud .distinciones .reconocimiento .best {
+    background: none;
+    border-radius: 0%;
+    margin: 0px;
+    height: 77px; } }
 @media (max-width: 395px) {
   .home-page .text-zone h1 {
     font-size: 12vw !important;
