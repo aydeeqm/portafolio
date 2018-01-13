@@ -16,8 +16,8 @@ const Mypro = () => {
                             <p>Plataforma para gestión de proyectos con react.js y sass.</p>
                             <figcaption >
                                 <div className="classless">
-                                    <div className="icon"><a href="https://github.com/AydeeQM/Trello-redux" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
-                                    <a className="icon venobox vbox-item" href="https://aydeeqm.github.io/Trello-redux/" target="_blank" rel='noopener noreferrer'><i className="fa fa-laptop" aria-hidden="true"></i></a>
+                                    <div className="icon"><a href="https://github.com/AydeeQM/Trello-firebase" target="_blank" rel='noopener noreferrer' ><i className="fa fa-github" aria-hidden="true"></i></a></div>
+                                    <a className="icon venobox vbox-item" href="https://trello-fire.firebaseapp.com/" target="_blank" rel='noopener noreferrer'><i className="fa fa-laptop" aria-hidden="true"></i></a>
                                 </div>
                             </figcaption>
                         </div>
